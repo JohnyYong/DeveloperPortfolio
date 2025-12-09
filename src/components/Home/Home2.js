@@ -10,41 +10,38 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              WHO AM <span className="purple"> I </span>?
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I’m a <b className="purple">Game Programmer</b> who loves building
+              systems, tools, and gameplay experiences from the ground up.  
+              Most of my work revolves around designing engines, solving
+              performance challenges, and creating mechanics that feel great to play.
               <br />
               <br />
-              I’m proficient in
+              I specialise in 
               <i>
-                <b className="purple">
-                  {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
-                </b>
+                <b className="purple"> C++, C#, Unity, OpenGL, and Gameplay Systems </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              — with strong experience in engine architecture, ECS design,
+              AI behaviour, and editor tools.
               <br />
               <br />
-              My key areas of interest include developing
+              My key interests include developing  
               <i>
-                <b className="purple">
-                  {" "}
-                  Web Applications, Blockchain Solutions,{" "}
-                </b>
+                <b className="purple"> Games, AI Systems, Procedural Generation, </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              and anything that pushes technical creativity forward.
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
+              I’ve built projects ranging from  
+              <b className="purple"> PC Games, VR Games, A* pathfinding optimizers, </b>  
+              to <b className="purple">full C++/OpenGL engines with ImGui editors </b>
+              and <b className="purple">top-down action combat systems</b>.
+              <br />
+              <br />
+              I love making games feel responsive, polished, and performant —
+              and I’m always exploring new techniques to improve my craft.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -57,4 +54,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
