@@ -8,8 +8,8 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi everyone! I’m <span className="cyan">Johny Yong Jun Siang</span>{" "}
-            from <span className="cyan">Singapore</span>.
+            Hi everyone! I’m <span className="cyan">Johny Yong Jun Siang</span> from{" "}
+            <span className="cyan">Singapore</span>.
             <br />
             I’m currently pursuing a{" "}
             <span className="cyan">
@@ -19,23 +19,26 @@ function AboutCard() {
             <span className="cyan">
               Singapore Institute of Technology / DigiPen Institute of Technology
             </span>
-            .
+            , where I focus on building gameplay systems, tools, and polished game
+            experiences.
             <br />
             <br />
-            I’m a{" "}
-            <span className="cyan">game programmer</span> with over{" "}
-            <span className="cyan">5 years of academic and project experience</span>{" "}
-            in C, C++, and C#, building games and tools in{" "}
-            <span className="cyan">Unity, Unreal, and custom engines</span> across{" "}
-            PC, VR, console, and mobile.
-            I enjoy designing{" "}
-            <span className="cyan">game AI systems, pathfinding, and behavior logic</span>{" "}
-            that make worlds feel responsive and alive.
+            I’m a <span className="cyan">game programmer</span> who loves turning ideas
+            into interactive, responsive systems. Over the past{" "}
+            <span className="cyan">5+ years</span>, I’ve worked extensively with{" "}
+            <span className="cyan">C, C++, and C#</span>, creating games in{" "}
+            <span className="cyan">Unity, Unreal, and custom-built engines</span>—from
+            physics-based shooters to AI-driven behavior systems.  
+            <br />
+            I enjoy the challenge of designing{" "}
+            <span className="cyan">
+              smart game AI, fluid animations, and clean gameplay tools
+            </span>{" "}
+            that make each project feel alive and enjoyable to build.
             <br />
             <br />
-            Outside of coding and engine work, I stay inspired through:
+            Outside of coding and engine tinkering, I stay inspired through:
           </p>
-
           <ul>
             <li className="about-activity">
               <ImPointRight /> Playing Japanese Role-Playing Games (JRPGs) and
@@ -53,9 +56,9 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Build systems that are fun to play, smart under the hood, and meaningful to the player."
+            "Humanity's greatest gift doesn't lies in the knowledge they know, but their ability to learn and overcome whatever they have faced."
           </p>
-          <footer className="blockquote-footer">Johny</footer>
+          <footer className="blockquote-footer">Johny Yong</footer>
         </blockquote>
       </Card.Body>
     </Card>
