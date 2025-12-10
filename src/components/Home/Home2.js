@@ -10,10 +10,10 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              WHO AM <span className="purple"> I </span>?
+              WHO AM <span className="cyan"> I </span>?
             </h1>
             <p className="home-about-body">
-              I’m a <b className="purple">Game Programmer</b> who loves building
+              I’m a <b className="cyan">Game Programmer</b> who loves building
               systems, tools, and gameplay experiences from the ground up.  
               Most of my work revolves around designing engines, solving
               performance challenges, and creating mechanics that feel great to play.
@@ -21,7 +21,7 @@ function Home2() {
               <br />
               I specialise in 
               <i>
-                <b className="purple"> C++, C#, Unity, OpenGL, and Gameplay Systems </b>
+                <b className="cyan"> C++, C#, Unity, OpenGL, and Gameplay Systems </b>
               </i>
               — with strong experience in engine architecture, ECS design,
               AI behaviour, and editor tools.
@@ -29,15 +29,15 @@ function Home2() {
               <br />
               My key interests include developing  
               <i>
-                <b className="purple"> Games, AI Systems, Procedural Generation, </b>
+                <b className="cyan"> Games, AI Systems, Procedural Generation, </b>
               </i>
               and anything that pushes technical creativity forward.
               <br />
               <br />
               I’ve built projects ranging from  
-              <b className="purple"> PC Games, VR Games, A* pathfinding optimizers, </b>  
-              to <b className="purple">full C++/OpenGL engines with ImGui editors </b>
-              and <b className="purple">top-down action combat systems</b>.
+              <b className="cyan"> PC Games, VR Games, A* pathfinding optimizers, </b>  
+              to <b className="cyan">full C++/OpenGL engines with ImGui editors </b>
+              and <b className="cyan">top-down action combat systems</b>.
               <br />
               <br />
               I love making games feel responsive, polished, and performant —
