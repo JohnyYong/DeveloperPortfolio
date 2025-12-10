@@ -31,7 +31,6 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        {/* Use Link instead of href */}
         <Navbar.Brand as={Link} to="/" className="d-flex" onClick={() => updateExpanded(false)}>
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
