@@ -4,7 +4,7 @@ import { Col, Row } from "react-bootstrap";
 // --- Game Programming / Engine Tech ---
 import C from "../../Assets/TechIcons/C++.svg";
 import CSharp from "../../Assets/TechIcons/CSharp.svg";
-import FMod from "../../Assets/TechIcons/FMod.svg";
+import FMod from "../../Assets/TechIcons/fmod.svg";
 import OpenGL from "../../Assets/TechIcons/OpenGL.svg";
 import Unity from "../../Assets/TechIcons/Unity.svg";
 import Unreal from "../../Assets/TechIcons/UE.svg";

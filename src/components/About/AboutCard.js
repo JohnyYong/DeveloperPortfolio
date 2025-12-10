@@ -8,37 +8,54 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi everyone! I’m <span className="purple">Soumyajit Behera</span>{" "}
-            from <span className="purple">Bhubaneswar, India</span>.
+            Hi everyone! I’m <span className="cyan">Johny Yong Jun Siang</span>{" "}
+            from <span className="cyan">Singapore</span>.
             <br />
-            I’m currently working as a{" "}
-            <span className="purple">Software Developer</span> at{" "}
-            <span className="purple">Juspay</span>.
-            <br />I hold an Integrated M.Sc. (IMSc) in{" "}
-            <span className="purple">Mathematics and Computing</span> from{" "}
-            <span className="purple">BIT Mesra</span>.
+            I’m currently pursuing a{" "}
+            <span className="cyan">
+              B.Sc. (Hons) in Interactive Media &amp; Game Development
+            </span>{" "}
+            at{" "}
+            <span className="cyan">
+              Singapore Institute of Technology / DigiPen Institute of Technology
+            </span>
+            .
             <br />
             <br />
-            Outside of coding, I love engaging in activities that keep me
-            creative and inspired:
+            I’m a{" "}
+            <span className="cyan">game programmer</span> with over{" "}
+            <span className="cyan">5 years of academic and project experience</span>{" "}
+            in C, C++, and C#, building games and tools in{" "}
+            <span className="cyan">Unity, Unreal, and custom engines</span> across{" "}
+            PC, VR, console, and mobile.
+            I enjoy designing{" "}
+            <span className="cyan">game AI systems, pathfinding, and behavior logic</span>{" "}
+            that make worlds feel responsive and alive.
+            <br />
+            <br />
+            Outside of coding and engine work, I stay inspired through:
           </p>
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games 🎮
+              <ImPointRight /> Playing Japanese Role-Playing Games (JRPGs) and
+              analyzing their design 🎮
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs ✍️
+              <ImPointRight /> Exploring AI and automation to enhance creative workflows 🤖
             </li>
             <li className="about-activity">
-              <ImPointRight /> Traveling and Exploring New Places 🌍
+              <ImPointRight /> Reading novels &amp; self-improvement books 📚
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Traveling and experiencing different cultures 🌏
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Build systems that are fun to play, smart under the hood, and meaningful to the player."
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Johny</footer>
         </blockquote>
       </Card.Body>
     </Card>

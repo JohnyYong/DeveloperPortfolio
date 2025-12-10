@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DeveloperPortfolio/static/css/main.99ec5ce1.css",
-    "main.js": "/DeveloperPortfolio/static/js/main.5aa39a52.js",
+    "main.css": "/DeveloperPortfolio/static/css/main.325b00af.css",
+    "main.js": "/DeveloperPortfolio/static/js/main.cd5c2f22.js",
     "static/js/453.ac9b7e2a.chunk.js": "/DeveloperPortfolio/static/js/453.ac9b7e2a.chunk.js",
     "static/media/logo.png": "/DeveloperPortfolio/static/media/logo.4a2bc201d7c669268310.png",
     "static/media/leaf.png": "/DeveloperPortfolio/static/media/leaf.ff2616f664c8c0ceab91.png",
@@ -22,7 +22,7 @@
     "static/media/React.svg": "/DeveloperPortfolio/static/media/React.dab5e742691999bfe3df57d8d690607b.svg",
     "static/media/JSON.svg": "/DeveloperPortfolio/static/media/JSON.513b7ec4886957241cb67c4159fd1044.svg",
     "static/media/pre.svg": "/DeveloperPortfolio/static/media/pre.4410c5baaa673cc131da.svg",
-    "static/media/FMod.svg": "/DeveloperPortfolio/static/media/FMod.80464f49a4bf55062bb7bb752a224381.svg",
+    "static/media/fmod.svg": "/DeveloperPortfolio/static/media/fmod.80464f49a4bf55062bb7bb752a224381.svg",
     "index.html": "/DeveloperPortfolio/index.html",
     "static/media/Node.svg": "/DeveloperPortfolio/static/media/Node.066ea1a40c1c8f42c3facd6c4128111d.svg",
     "static/media/CSharp.svg": "/DeveloperPortfolio/static/media/CSharp.040a443e3be3e2ab322fb029ff9dc32a.svg",
@@ -33,12 +33,12 @@
     "static/media/Apple MacOSX.svg": "/DeveloperPortfolio/static/media/Apple MacOSX.619ec76bf469e3d85a245a7d132edec9.svg",
     "static/media/Unity.svg": "/DeveloperPortfolio/static/media/Unity.d8cbb1f09c1123535a0e5e319ee719fe.svg",
     "static/media/Firebase.svg": "/DeveloperPortfolio/static/media/Firebase.c5e643a18f060de1d39eda5908abbb5f.svg",
-    "main.99ec5ce1.css.map": "/DeveloperPortfolio/static/css/main.99ec5ce1.css.map",
-    "main.5aa39a52.js.map": "/DeveloperPortfolio/static/js/main.5aa39a52.js.map",
+    "main.325b00af.css.map": "/DeveloperPortfolio/static/css/main.325b00af.css.map",
+    "main.cd5c2f22.js.map": "/DeveloperPortfolio/static/js/main.cd5c2f22.js.map",
     "453.ac9b7e2a.chunk.js.map": "/DeveloperPortfolio/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99ec5ce1.css",
-    "static/js/main.5aa39a52.js"
+    "static/css/main.325b00af.css",
+    "static/js/main.cd5c2f22.js"
   ]
 }

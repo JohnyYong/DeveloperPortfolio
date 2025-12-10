@@ -14,7 +14,7 @@ html {
   --imp-text-color: #4fd1c5; /* main cyan */
 }
 
-.purple {
+.cyan {
   color: var(--imp-text-color) !important;
 }
 
