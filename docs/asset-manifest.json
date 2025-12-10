@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DeveloperPortfolio/static/css/main.99ec5ce1.css",
-    "main.js": "/DeveloperPortfolio/static/js/main.8b64c44b.js",
+    "main.js": "/DeveloperPortfolio/static/js/main.5aa39a52.js",
     "static/js/453.ac9b7e2a.chunk.js": "/DeveloperPortfolio/static/js/453.ac9b7e2a.chunk.js",
     "static/media/logo.png": "/DeveloperPortfolio/static/media/logo.4a2bc201d7c669268310.png",
     "static/media/leaf.png": "/DeveloperPortfolio/static/media/leaf.ff2616f664c8c0ceab91.png",
@@ -15,31 +15,30 @@
     "static/media/chatify.png": "/DeveloperPortfolio/static/media/chatify.7206044e0b5cdad44726.png",
     "static/media/avatar.svg": "/DeveloperPortfolio/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
     "static/media/SQL.svg": "/DeveloperPortfolio/static/media/SQL.52fc098126b8b29ddd950a944b5d0026.svg",
-    "static/media/lua.svg": "/DeveloperPortfolio/static/media/lua.1c11780a2aecd99e6b3a42124f2e7b67.svg",
+    "static/media/OpenGL.svg": "/DeveloperPortfolio/static/media/OpenGL.5b911a30b993641a94d18b1cfda00275.svg",
     "static/media/intellij-idea.svg": "/DeveloperPortfolio/static/media/intellij-idea.a665ae5920b20b5c309de0aa306924d5.svg",
     "static/media/vscode.svg": "/DeveloperPortfolio/static/media/vscode.01c32f3da6e0380beb0ed980549fa10d.svg",
     "static/media/Google Chrome.svg": "/DeveloperPortfolio/static/media/Google Chrome.d37257e4fd1f57a382e297a74a566225.svg",
     "static/media/React.svg": "/DeveloperPortfolio/static/media/React.dab5e742691999bfe3df57d8d690607b.svg",
-    "static/media/json.svg": "/DeveloperPortfolio/static/media/json.513b7ec4886957241cb67c4159fd1044.svg",
+    "static/media/JSON.svg": "/DeveloperPortfolio/static/media/JSON.513b7ec4886957241cb67c4159fd1044.svg",
     "static/media/pre.svg": "/DeveloperPortfolio/static/media/pre.4410c5baaa673cc131da.svg",
-    "static/media/fmod.svg": "/DeveloperPortfolio/static/media/fmod.80464f49a4bf55062bb7bb752a224381.svg",
+    "static/media/FMod.svg": "/DeveloperPortfolio/static/media/FMod.80464f49a4bf55062bb7bb752a224381.svg",
     "index.html": "/DeveloperPortfolio/index.html",
     "static/media/Node.svg": "/DeveloperPortfolio/static/media/Node.066ea1a40c1c8f42c3facd6c4128111d.svg",
     "static/media/CSharp.svg": "/DeveloperPortfolio/static/media/CSharp.040a443e3be3e2ab322fb029ff9dc32a.svg",
     "static/media/C++.svg": "/DeveloperPortfolio/static/media/C++.a87de30de97ce5ed259ace5ef23c7e91.svg",
     "static/media/Javascript.svg": "/DeveloperPortfolio/static/media/Javascript.2d2e6d4fde8c0beaf89875c287164a7c.svg",
-    "static/media/Typescript.svg": "/DeveloperPortfolio/static/media/Typescript.da311fe2461aa58c2cbe9f6948c497c7.svg",
     "static/media/UE.svg": "/DeveloperPortfolio/static/media/UE.c316f08995e2afdb8f85152f87cbf961.svg",
     "static/media/Git.svg": "/DeveloperPortfolio/static/media/Git.9da88573cca3c97a3a1523ae09d93654.svg",
     "static/media/Apple MacOSX.svg": "/DeveloperPortfolio/static/media/Apple MacOSX.619ec76bf469e3d85a245a7d132edec9.svg",
     "static/media/Unity.svg": "/DeveloperPortfolio/static/media/Unity.d8cbb1f09c1123535a0e5e319ee719fe.svg",
     "static/media/Firebase.svg": "/DeveloperPortfolio/static/media/Firebase.c5e643a18f060de1d39eda5908abbb5f.svg",
     "main.99ec5ce1.css.map": "/DeveloperPortfolio/static/css/main.99ec5ce1.css.map",
-    "main.8b64c44b.js.map": "/DeveloperPortfolio/static/js/main.8b64c44b.js.map",
+    "main.5aa39a52.js.map": "/DeveloperPortfolio/static/js/main.5aa39a52.js.map",
     "453.ac9b7e2a.chunk.js.map": "/DeveloperPortfolio/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99ec5ce1.css",
-    "static/js/main.8b64c44b.js"
+    "static/js/main.5aa39a52.js"
   ]
 }

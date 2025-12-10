@@ -3,100 +3,69 @@ import { Col, Row } from "react-bootstrap";
 
 // --- Game Programming / Engine Tech ---
 import C from "../../Assets/TechIcons/C++.svg";
+import CSharp from "../../Assets/TechIcons/CSharp.svg";
+import FMod from "../../Assets/TechIcons/FMod.svg";
+import OpenGL from "../../Assets/TechIcons/OpenGL.svg";
 import Unity from "../../Assets/TechIcons/Unity.svg";
-import UnrealEngine from "../../Assets/TechIcons/UE.svg";
-import JSON from "../../Assets/TechIcons/json.svg"
-import Lua from "../../Assets/TechIcons/lua.svg"
-import CSharp from "../../Assets/TechIcons/CSharp.svg"
+import Unreal from "../../Assets/TechIcons/UE.svg";
 
-
-// --- Languages / Scripting ---
+// --- Web / Scripting ---
 import Javascript from "../../Assets/TechIcons/Javascript.svg";
-import Typescript from "../../Assets/TechIcons/Typescript.svg";
-
-// --- Web / Backend ---
 import Node from "../../Assets/TechIcons/Node.svg";
 import ReactIcon from "../../Assets/TechIcons/React.svg";
+import JSONIcon from "../../Assets/TechIcons/JSON.svg";
 
-// --- Tools / DevOps / Backend Services ---
+// --- Tools / DevOps / Cloud ---
 import Git from "../../Assets/TechIcons/Git.svg";
 import SQL from "../../Assets/TechIcons/SQL.svg";
 import Firebase from "../../Assets/TechIcons/Firebase.svg";
-import FMOD from "../../Assets/TechIcons/fmod.svg"
 
 function Techstack() {
+
+  // --- INLINE CSS (no external file needed) ---
+  const styles = {
+    iconContainer: {
+      textAlign: "center",
+      marginBottom: "24px"
+    },
+    icon: {
+      width: "60px",
+      height: "60px",
+      objectFit: "contain",
+      display: "block",
+      margin: "0 auto 8px"
+    },
+    label: {
+      fontSize: "0.9rem",
+      fontWeight: 500,
+      color: "#ffffff"
+    }
+  };
+
+  const techItems = [
+    { src: C, label: "C++" },
+    { src: CSharp, label: "C#" },
+    { src: FMod, label: "FMOD" },
+    { src: OpenGL, label: "OpenGL" },
+    { src: Unity, label: "Unity" },
+    { src: Unreal, label: "Unreal Engine" },
+    { src: Javascript, label: "JavaScript" },
+    { src: JSONIcon, label: "JSON" },
+    { src: Node, label: "Node.js" },
+    { src: ReactIcon, label: "React.js" },
+    { src: Firebase, label: "Firebase" },
+    { src: Git, label: "Git" },
+    { src: SQL, label: "SQL" },
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-
-      {/* --- Game / Engine --- */}
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={C} alt="C++" />
-        <div className="tech-icons-text">C++</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={CSharp} alt="CSharp"/>
-        <div className="tech-icons-text">CSharp</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Unity} alt="Unity" />
-        <div className="tech-icons-text">Unity</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={UnrealEngine} alt="UE" />
-        <div className="tech-icons-text">UnrealEngine</div>
-      </Col>
-
-      {/* --- Languages / Scripting --- */}
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Javascript} alt="JavaScript" />
-        <div className="tech-icons-text">JavaScript</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Typescript} alt="TypeScript" />
-        <div className="tech-icons-text">TypeScript</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={JSON} alt="Json" />
-        <div className="tech-icons-text">Json</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Lua} alt="Lua" />
-        <div className="tech-icons-text">Lua</div>
-      </Col>
-      {/* --- Web / Frontend / Backend --- */}
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Node} alt="Node.js" />
-        <div className="tech-icons-text">Node.js</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={ReactIcon} alt="React.js" />
-        <div className="tech-icons-text">React</div>
-      </Col>
-
-      {/* --- Tools / Backend Services --- */}
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Git} alt="Git" />
-        <div className="tech-icons-text">Git / Version Control</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={SQL} alt="SQL" />
-        <div className="tech-icons-text">SQL / Databases</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Firebase} alt="Firebase" />
-        <div className="tech-icons-text">Firebase</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={FMOD} alt="Fmod" />
-        <div className="tech-icons-text">FMOD</div>
-      </Col>
+      {techItems.map((item) => (
+        <Col key={item.label} xs={4} md={2} style={styles.iconContainer}>
+          <img src={item.src} alt={item.label} style={styles.icon} />
+          <div style={styles.label}>{item.label}</div>
+        </Col>
+      ))}
     </Row>
   );
 }
