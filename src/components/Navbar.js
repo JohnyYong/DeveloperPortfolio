@@ -62,7 +62,13 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}>
-                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Game Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}>
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Other Projects
               </Nav.Link>
             </Nav.Item>
 
@@ -70,18 +76,6 @@ function NavBar() {
               <Nav.Link as={Link} to="/resume" onClick={() => updateExpanded(false)}>
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
-            </Nav.Item>
-
-            {/* This button probably should link to the GitHub repo, not back to the site */}
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/JohnyYong/DeveloperPortfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
