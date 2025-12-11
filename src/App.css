@@ -43,12 +43,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);      /* or rgba(0,0,0,0.9) */
   z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease; /* 0.5s fade */
+}
+
+.intro-screen.fade-out {
+  opacity: 0;
 }
 
 .intro-gif {
-  width: auto;
-  height: 50vh;
+  max-width: 80vw;
+  max-height: 80vh;
   object-fit: contain;
 }

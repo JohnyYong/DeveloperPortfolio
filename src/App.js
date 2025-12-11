@@ -17,25 +17,31 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import introGif from "./Assets/Intro.gif";   
+import introGif from "./Assets/Intro.gif";
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
+  const [isFading, setIsFading] = useState(false);
 
-  // intro GIF timer
   useEffect(() => {
-    const introTimer = setTimeout(() => {
-      setShowIntro(false);
-    }, 1200); // show for 3s
-    return () => clearTimeout(introTimer);
+    // total: 1.5s start fading at ~1.0s, fully gone at 1.5s
+    const fadeDelay = 1000;  // when fade starts (ms)
+    const hideDelay = 1500;  // when overlay is removed (ms)
+
+    const fadeTimer = setTimeout(() => setIsFading(true), fadeDelay);
+    const hideTimer = setTimeout(() => setShowIntro(false), hideDelay);
+
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(hideTimer);
+    };
   }, []);
 
   return (
     <Router>
-
       {/* INTRO SCREEN */}
       {showIntro && (
-        <div className="intro-screen">
+        <div className={`intro-screen ${isFading ? "fade-out" : ""}`}>
           <img src={introGif} alt="Intro" className="intro-gif" />
         </div>
       )}
