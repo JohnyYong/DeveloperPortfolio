@@ -31,7 +31,7 @@ function Snowfall() {
             random: true,
           },
           size: {
-            value: 20,              // bigger flakes
+            value: 15,              // bigger flakes
             random: true,           
           },
           rotate: {

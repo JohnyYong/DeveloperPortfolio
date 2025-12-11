@@ -297,7 +297,7 @@ button:focus {
 
 @media (max-width: 767px) {
   .Typewriter__wrapper {
-    font-size: 3.5em !important;
+    font-size: 3rem !important;
     font-weight: 500 !important;
     position: absolute !important;
   }
@@ -440,7 +440,7 @@ button:focus {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: #0f5663 !important;
 }
 /* --------- */
 /* Projects */
