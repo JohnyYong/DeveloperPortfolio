@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import OtherProjectCards from "./OtherProjectCards";
 import Particle from "../Particle";
 import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import RabinAI from "../../Assets/Projects/RabinAI.gif";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function OtherProjects() {
@@ -20,12 +20,17 @@ function OtherProjects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <OtherProjectCards
-              imgPath={chatify}
+              imgPath={RabinAI}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Game AI Project"
+              description={
+                "A technical Game AI project consisting of three major assignments:\n\n" +
+                "1) Behavior Tree & Finite State Machine — Implemented core AI decision-making systems with clean transitions and robust state handling.\n" +
+                "2) A* Pathfinding & Heuristics — Optimized A* heavily and achieved a Top 4 ranking in a cohort-wide speed challenge by Professor Steve Rabin.\n" +
+                "3) Terrain Analysis — Performed environment evaluation and cost-based navigation analysis to support smarter AI movement.\n\n" +
+                "The project culminated in a guided personal tour by Steve Rabin for the Top 4 performers."
+              }
+              ghLink="https://github.com/JohnyYong/Game-AI-Projects"
             />
           </Col>
 
