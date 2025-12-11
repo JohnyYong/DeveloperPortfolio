@@ -1,52 +1,61 @@
-import React from "react";
+import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
+import { loadSlim } from "@tsparticles/slim";
+import snowflakeImg from "../Assets/snow.png"; 
 
 function Snowfall() {
+  const particlesInit = useCallback(async (engine) => {
+    await loadSlim(engine);
+  }, []);
+
   return (
     <Particles
       id="snowfall"
-      params={{
+      init={particlesInit}
+      options={{
+        fullScreen: { enable: false },
+        background: { color: "transparent" },
+        fpsLimit: 60,
         particles: {
           number: {
-            value: 140,
-            density: {
-              enable: true,
-              value_area: 800,
-            },
-          },
-          color: {
-            value: "#ffffff",
+            value: 40,
+            density: { enable: true, area: 800 },
           },
           shape: {
-            type: "circle",
+            type: "image",
+            image: {
+              src: snowflakeImg, 
+              width: 64,
+              height: 64,
+            },
           },
           opacity: {
-            value: 0.8,
+            value: 0.9,
             random: true,
           },
           size: {
-            value: 3,
-            random: true,
+            value: 14, // base size
+            random: { enable: true, minimumValue: 6 }, // some variation
+          },
+          rotate: {
+            // spinning flakes
+            value: { min: 0, max: 360 },
+            direction: "random",
+            animation: {
+              enable: true,
+              speed: 10, // higher = faster spin
+              sync: false,
+            },
           },
           move: {
             enable: true,
-            direction: "bottom",      // fall down
+            direction: "bottom",
             speed: 1.2,
             straight: false,
-            out_mode: "out",          // disappear when leaving screen
+            outModes: { default: "out" },
           },
         },
-        interactivity: {
-          events: {
-            onhover: {
-              enable: false,
-            },
-            onclick: {
-              enable: false,
-            },
-          },
-        },
-        retina_detect: true,
+        detectRetina: true,
       }}
     />
   );

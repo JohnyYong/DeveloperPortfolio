@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import OtherProjectCards from "./OtherProjectCards";
-import Particle from "../Particle";
+import Snowfall from "../Snowfall"
 import editor from "../../Assets/Projects/codeEditor.png";
 import RabinAI from "../../Assets/Projects/RabinAI.gif";
 import GameAI from "../../Assets/Projects/HumanisticGameAI.png";
@@ -10,7 +10,7 @@ import SeamlessCarve from "../../Assets/Projects/SeamlessCarve.gif"
 function OtherProjects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      <Snowfall />
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple"> Non Game related works </strong>
