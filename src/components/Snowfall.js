@@ -1,6 +1,6 @@
-
 import React from "react";
 import Particles from "react-tsparticles";
+import snowflakeImg from "../Assets/snow.png"; // <-- make sure this exists
 
 function Snowfall() {
   return (
@@ -9,7 +9,7 @@ function Snowfall() {
       params={{
         particles: {
           number: {
-            value: 80,
+            value: 35, // fewer flakes than before (was 80)
             density: {
               enable: true,
               value_area: 800,
@@ -19,22 +19,37 @@ function Snowfall() {
             value: "#ffffff",
           },
           shape: {
-            type: "circle",
+            type: "image",          // was "circle"
+            image: {
+              src: snowflakeImg,    // use imported image URL
+              width: 64,
+              height: 64,
+            },
           },
           opacity: {
-            value: 0.8,
+            value: 0.9,
             random: true,
           },
           size: {
-            value: 3,
+            value: 12,              // bigger flakes
+            random: true,           // still some variation
+          },
+          rotate: {
+            value: 0,
             random: true,
+            direction: "random",
+            animation: {
+              enable: true,
+              speed: 5,             // spin speed
+              sync: false,
+            },
           },
           move: {
             enable: true,
-            direction: "bottom",      // fall down
+            direction: "bottom",    // fall down
             speed: 1.2,
             straight: false,
-            out_mode: "out",          // disappear when leaving screen
+            out_mode: "out",        // disappear when leaving screen
           },
         },
         interactivity: {
