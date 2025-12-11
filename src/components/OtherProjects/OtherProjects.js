@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import OtherProjectCards from "./OtherProjectCards";
 import Snowfall from "../Snowfall"
-import editor from "../../Assets/Projects/codeEditor.png";
 import RabinAI from "../../Assets/Projects/RabinAI.gif";
 import GameAI from "../../Assets/Projects/HumanisticGameAI.png";
 import SeamlessCarve from "../../Assets/Projects/SeamlessCarve.gif"

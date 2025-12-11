@@ -24,8 +24,7 @@ function App() {
   const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
-    // total: 1.5s start fading at ~1.0s, fully gone at 1.5s
-    const fadeDelay = 1000;  // when fade starts (ms)
+    const fadeDelay = 1300;  // when fade starts (ms)
     const hideDelay = 1500;  // when overlay is removed (ms)
 
     const fadeTimer = setTimeout(() => setIsFading(true), fadeDelay);

@@ -2,12 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Snowfall from "../Snowfall"
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
 import grabity from "../../Assets/Projects/GrabityTitle.gif";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import Knossos from "../../Assets/Projects/DungeonOfKnossos.png";
+import ReflectionAfterTheEnd from "../../Assets/Projects/ReflectionAfterTheEnd.png"
+
 
 function Projects() {
   return (
@@ -33,6 +31,32 @@ function Projects() {
               ghLink="https://github.com/JohnyYong/Grabity"
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Knossos}
+              isBlog={false}
+              title="Dungeon Of Knossos"
+              description={
+                "Dungeon Of Knossos is a quick 2D top down roguelike game made in Unity where I tested the mechanics of Procedural Generation on rooms. Up to 30 rooms will be generated everytime the level is restarted and the dungeon has its difficulty scaled such that the enemies nearer to the spawn are easier.\n\n"
+                 + "The art assets within the game are all done by yours truly"
+              }
+              ghLink="https://github.com/JohnyYong/DungeonOfKnossos"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ReflectionAfterTheEnd}
+              isBlog={false}
+              title="Reflection After The End"
+              description={
+                "Reflection After The End is a small 3D game project which I experimented using Unreal Engine. The player awakens in a mysterious court suspended between life and death, where they must prove their worthiness to ascend to Heaven or fall into Hell. Guided by a divine Judge, the player must uncover three key memories tied to their past—each housed in a location twisted by denial and guilt. Through puzzles and symbolic tasks, they confront the truths they once buried. In the end, they must return to the courthouse, where judgment is passed—either by their own words or by someone they wronged."
+              }
+              ghLink="https://github.com/JohnyYong/DungeonOfKnossos"
+              demoLink="https://drive.google.com/file/d/1e6QFiiWt70sOMYA3uGe2WXDk386Qgy9Z/view?usp=drive_link"
+            />
+          </Col>
+          
         </Row>
       </Container>
     </Container>
