@@ -18,8 +18,11 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import introGif from "./Assets/Intro.gif";   
+
 function App() {
   const [load, upadateLoad] = useState(true);
+  const [showIntro, setShowIntro] = useState(true); 
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -29,9 +32,26 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const introTimer = setTimeout(() => {
+      setShowIntro(false);
+    }, 3000); // 3 seconds change
+
+    return () => clearTimeout(introTimer);
+  }, []);
+
   return (
     <Router>
+      {/* existing preloader */}
       <Preloader load={load} />
+
+      {/* NEW: intro overlay on top of everything */}
+      {showIntro && (
+        <div className="intro-screen">
+          <img src={introGif} alt="Intro" className="intro-gif" />
+        </div>
+      )}
+
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
@@ -41,7 +61,7 @@ function App() {
           <Route path="/otherproject" element={<OtherProjects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>
