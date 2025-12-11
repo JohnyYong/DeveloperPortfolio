@@ -4,7 +4,7 @@ import OtherProjectCards from "./OtherProjectCards";
 import Particle from "../Particle";
 import editor from "../../Assets/Projects/codeEditor.png";
 import RabinAI from "../../Assets/Projects/RabinAI.gif";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import GameAI from "../../Assets/Projects/HumanisticGameAI.png";
 
 function OtherProjects() {
   return (
@@ -25,10 +25,9 @@ function OtherProjects() {
               title="Game AI Project"
               description={
                 "A technical Game AI project consisting of three major assignments:\n\n" +
-                "1) Behavior Tree & Finite State Machine — Implemented core AI decision-making systems with clean transitions and robust state handling.\n" +
-                "2) A* Pathfinding & Heuristics — Optimized A* heavily and achieved a Top 4 ranking in a cohort-wide speed challenge by Professor Steve Rabin.\n" +
-                "3) Terrain Analysis — Performed environment evaluation and cost-based navigation analysis to support smarter AI movement.\n\n" +
-                "The project culminated in a guided personal tour by Steve Rabin for the Top 4 performers."
+                "1) Behavior Tree & Finite State Machine - Implemented core AI decision-making systems with clean transitions and robust state handling.\n\n" +
+                "2) A* Pathfinding & Heuristics - Optimized A* heavily and achieved a Top 4 ranking in a cohort-wide speed challenge by Professor Steve Rabin.\n\n" +
+                "3) Terrain Analysis - Performed environment evaluation and cost-based navigation analysis to support smarter AI movement.\n\n"
               }
               ghLink="https://github.com/JohnyYong/Game-AI-Projects"
             />
@@ -36,23 +35,13 @@ function OtherProjects() {
 
           <Col md={4} className="project-card">
             <OtherProjectCards
-              imgPath={bitsOfCode}
+              imgPath={GameAI}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <OtherProjectCards
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Humanist Game AI Research"
+              description= {"A project conducted by myself along with 2 other group members, focusing on humanistic AI behavior through implementating various combinations of Game AI techniques. Major focus on the concept of [Sense -> Think -> Act]. \n\n" +
+                            "Personally, I focused on the implementation of the [Sense] section of the project as well as the [Blackboard] of the AIs."
+              }
+              ghLink="https://github.com/JohnyYong/AIBehaviorAndInformationSharingResearch"
             />
           </Col>
         </Row>
