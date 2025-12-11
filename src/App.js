@@ -7,7 +7,6 @@ import Projects from "./components/Projects/Projects";
 import OtherProjects from "./components/OtherProjects/OtherProjects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
-import Snowfall from "../src/Snowfall"
 import {
   HashRouter as Router,
   Route,
@@ -35,7 +34,6 @@ function App() {
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
-        <Snowfall />       {/* ❄️ ADD THIS HERE */}
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />

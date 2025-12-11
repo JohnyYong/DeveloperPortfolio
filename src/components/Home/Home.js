@@ -4,6 +4,7 @@ import homeLogo from "../../Assets/home-main.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import Snowfall from "../Snowfall"
 import Techstack from "../About/Techstack";
 import Github from "../About/Github";
 import {
@@ -15,7 +16,7 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Particle />
+        <Snowfall />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
