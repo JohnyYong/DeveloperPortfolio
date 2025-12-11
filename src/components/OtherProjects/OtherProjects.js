@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import editor from "../../Assets/Projects/codeEditor.png";
 import RabinAI from "../../Assets/Projects/RabinAI.gif";
 import GameAI from "../../Assets/Projects/HumanisticGameAI.png";
+import SeamlessCarve from "../../Assets/Projects/SeamlessCarve.gif"
 
 function OtherProjects() {
   return (
@@ -45,6 +46,18 @@ function OtherProjects() {
             />
           </Col>
         </Row>
+
+          <Col md={4} className="project-card">
+            <OtherProjectCards
+              imgPath={SeamlessCarve}
+              isBlog={false}
+              title="Seamless Carving"
+              description= {"A small project conducted within my group of friends on the topic of Seamless Carving, focusing on the Dynamic Programming section of the topic. \n\n" +
+                            "Personally, I worked on the seamless carving implementation, visualisation, CICD of the project, as well as optimisation of the technique through flattening the array used to 1 Dimensional array."
+              }
+              ghLink="https://github.com/JohnyYong/AlgoAnalysis_SeamlessCarving"
+            />
+          </Col>
       </Container>
     </Container>
   );
