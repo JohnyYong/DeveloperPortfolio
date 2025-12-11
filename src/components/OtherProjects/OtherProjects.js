@@ -12,7 +12,7 @@ function OtherProjects() {
       <Snowfall />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple"> Non Game related works </strong>
+          My Recent <strong className="cyan"> Non Game related works </strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.

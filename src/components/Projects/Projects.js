@@ -52,7 +52,7 @@ function Projects() {
               description={
                 "Reflection After The End is a small 3D game project which I experimented using Unreal Engine. The player awakens in a mysterious court suspended between life and death, where they must prove their worthiness to ascend to Heaven or fall into Hell. Guided by a divine Judge, the player must uncover three key memories tied to their past—each housed in a location twisted by denial and guilt. Through puzzles and symbolic tasks, they confront the truths they once buried. In the end, they must return to the courthouse, where judgment is passed—either by their own words or by someone they wronged."
               }
-              ghLink="https://github.com/JohnyYong/DungeonOfKnossos"
+              ghLink="https://github.com/JohnyYong/ReflectionAfterTheEnd"
               demoLink="https://drive.google.com/file/d/1e6QFiiWt70sOMYA3uGe2WXDk386Qgy9Z/view?usp=drive_link"
             />
           </Col>
