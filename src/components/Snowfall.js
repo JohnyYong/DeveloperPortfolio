@@ -1,43 +1,52 @@
-import React, { useCallback } from "react";
+import React from "react";
 import Particles from "react-tsparticles";
-import { loadSlim } from "@tsparticles/slim";
 
 function Snowfall() {
-  const particlesInit = useCallback(async (engine) => {
-    await loadSlim(engine); // ✔ Correct for new tsparticles
-  }, []);
-
   return (
     <Particles
       id="snowfall"
-      init={particlesInit}
-      options={{
-        fullScreen: { enable: false },
-        background: { color: "transparent" },
-        fpsLimit: 60,
+      params={{
         particles: {
           number: {
             value: 140,
-            density: { enable: true, area: 800 },
+            density: {
+              enable: true,
+              value_area: 800,
+            },
           },
-          color: { value: "#ffffff" },
-          shape: { type: "circle" },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "circle",
+          },
           opacity: {
             value: 0.8,
             random: true,
           },
           size: {
-            value: { min: 1, max: 3 },
+            value: 3,
+            random: true,
           },
           move: {
             enable: true,
-            direction: "bottom",
+            direction: "bottom",      // fall down
             speed: 1.2,
             straight: false,
-            outModes: { default: "out" },
+            out_mode: "out",          // disappear when leaving screen
           },
         },
-        detectRetina: true,
+        interactivity: {
+          events: {
+            onhover: {
+              enable: false,
+            },
+            onclick: {
+              enable: false,
+            },
+          },
+        },
+        retina_detect: true,
       }}
     />
   );
