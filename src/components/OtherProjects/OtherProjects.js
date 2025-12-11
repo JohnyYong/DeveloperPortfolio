@@ -45,9 +45,8 @@ function OtherProjects() {
               ghLink="https://github.com/JohnyYong/AIBehaviorAndInformationSharingResearch"
             />
           </Col>
-        </Row>
 
-          <Col md={4} className="project-card">
+            <Col md={4} className="project-card">
             <OtherProjectCards
               imgPath={SeamlessCarve}
               isBlog={false}
@@ -58,6 +57,7 @@ function OtherProjects() {
               ghLink="https://github.com/JohnyYong/AlgoAnalysis_SeamlessCarving"
             />
           </Col>
+        </Row>
       </Container>
     </Container>
   );
