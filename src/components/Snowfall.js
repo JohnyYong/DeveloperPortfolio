@@ -27,13 +27,11 @@ function Snowfall() {
           },
           shape: {
             type: "image",
-            options: {
-              image: {
+            image: {
                 src: snowflakeImg, // use imported image URL
                 width: 64,
                 height: 64,
               },
-            },
           },
           opacity: {
             value: 0.9,
