@@ -1,12 +1,15 @@
-
 import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "@tsparticles/slim";
-import snowflakeImg from "../Assets/snow.png"; // make sure src/Assets/snow.png exists
+import { loadImageShape } from "@tsparticles/shape-image"; 
+import snowflakeImg from "../Assets/snow.png"; // your custom flake
 
 function Snowfall() {
   const particlesInit = useCallback(async (engine) => {
+    // load the slim bundle
     await loadSlim(engine);
+
+    await loadImageShape(engine);
   }, []);
 
   return (
@@ -19,19 +22,17 @@ function Snowfall() {
         fpsLimit: 60,
         particles: {
           number: {
-            value: 35, // fewer flakes than before
+            value: 30, // fewer flakes
             density: { enable: true, area: 800 },
           },
           shape: {
             type: "image",
             options: {
-              image: [
-                {
-                  src: snowflakeImg, // custom snowflake image
-                  width: 64,
-                  height: 64,
-                },
-              ],
+              image: {
+                src: snowflakeImg, // use imported image URL
+                width: 64,
+                height: 64,
+              },
             },
           },
           opacity: {
