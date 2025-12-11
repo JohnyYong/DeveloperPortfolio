@@ -9,6 +9,7 @@ function Type() {
           "Software Developer",
           "Game Developer",
           "Role Playing Game Enjoyer",
+          "World Explorer"
         ],
         autoStart: true,
         loop: true,

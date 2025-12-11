@@ -9,7 +9,7 @@ function Snowfall() {
       params={{
         particles: {
           number: {
-            value: 35, // fewer flakes than before (was 80)
+            value: 55, 
             density: {
               enable: true,
               value_area: 800,
@@ -19,9 +19,9 @@ function Snowfall() {
             value: "#ffffff",
           },
           shape: {
-            type: "image",          // was "circle"
+            type: "image",          
             image: {
-              src: snowflakeImg,    // use imported image URL
+              src: snowflakeImg,    
               width: 64,
               height: 64,
             },
@@ -31,8 +31,8 @@ function Snowfall() {
             random: true,
           },
           size: {
-            value: 12,              // bigger flakes
-            random: true,           // still some variation
+            value: 20,              // bigger flakes
+            random: true,           
           },
           rotate: {
             value: 0,
@@ -40,16 +40,16 @@ function Snowfall() {
             direction: "random",
             animation: {
               enable: true,
-              speed: 5,             // spin speed
+              speed: 5,             
               sync: false,
             },
           },
           move: {
             enable: true,
-            direction: "bottom",    // fall down
+            direction: "bottom",    
             speed: 1.2,
             straight: false,
-            out_mode: "out",        // disappear when leaving screen
+            out_mode: "out",        
           },
         },
         interactivity: {

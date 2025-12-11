@@ -55,7 +55,7 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p style={{ color: "rgb(9, 178, 190) " }}>
             "Humanity's greatest gift doesn't lies in the knowledge they know, but their ability to learn and overcome whatever they have faced."
           </p>
           <footer className="blockquote-footer">Johny Yong</footer>
