@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DeveloperPortfolio/static/css/main.95491577.css",
-    "main.js": "/DeveloperPortfolio/static/js/main.d3400f82.js",
+    "main.js": "/DeveloperPortfolio/static/js/main.1a638497.js",
     "static/js/453.ac9b7e2a.chunk.js": "/DeveloperPortfolio/static/js/453.ac9b7e2a.chunk.js",
     "static/media/SeamlessCarve.gif": "/DeveloperPortfolio/static/media/SeamlessCarve.69559206b73e2e13e888.gif",
     "static/media/RabinAI.gif": "/DeveloperPortfolio/static/media/RabinAI.b5790d98f21303398c4c.gif",
@@ -9,6 +9,7 @@
     "static/media/about.png": "/DeveloperPortfolio/static/media/about.e7ac38f7e0f1b1594757.png",
     "static/media/home-main.png": "/DeveloperPortfolio/static/media/home-main.592faa8a64ef8db23b35.png",
     "static/media/avatar.svg": "/DeveloperPortfolio/static/media/avatar.f95db7aa769cb84c4071d7551b8402b1.svg",
+    "static/media/Intro.gif": "/DeveloperPortfolio/static/media/Intro.8a8dc33f0fac0ca123d8.gif",
     "static/media/leaf.png": "/DeveloperPortfolio/static/media/leaf.ff2616f664c8c0ceab91.png",
     "static/media/emotion.png": "/DeveloperPortfolio/static/media/emotion.eabfc16e7a146ab15778.png",
     "static/media/suicide.png": "/DeveloperPortfolio/static/media/suicide.9c86cd7138a398c45fa5.png",
@@ -17,7 +18,6 @@
     "static/media/blog.png": "/DeveloperPortfolio/static/media/blog.fb8ab7f271a937d5fc01.png",
     "static/media/GrabityTitle.gif": "/DeveloperPortfolio/static/media/GrabityTitle.3d2bb12ccc660df4ce9c.gif",
     "static/media/JohnyYongResume.pdf": "/DeveloperPortfolio/static/media/JohnyYongResume.5effec64924cc73bd945.pdf",
-    "static/media/Intro.gif": "/DeveloperPortfolio/static/media/Intro.4c6d94c65232f0039533.gif",
     "static/media/HumanisticGameAI.png": "/DeveloperPortfolio/static/media/HumanisticGameAI.f5f15745a34a46b5cdf2.png",
     "static/media/SQL.svg": "/DeveloperPortfolio/static/media/SQL.52fc098126b8b29ddd950a944b5d0026.svg",
     "static/media/OpenGL.svg": "/DeveloperPortfolio/static/media/OpenGL.5b911a30b993641a94d18b1cfda00275.svg",
@@ -40,11 +40,11 @@
     "static/media/Unity.svg": "/DeveloperPortfolio/static/media/Unity.d8cbb1f09c1123535a0e5e319ee719fe.svg",
     "static/media/Firebase.svg": "/DeveloperPortfolio/static/media/Firebase.c5e643a18f060de1d39eda5908abbb5f.svg",
     "main.95491577.css.map": "/DeveloperPortfolio/static/css/main.95491577.css.map",
-    "main.d3400f82.js.map": "/DeveloperPortfolio/static/js/main.d3400f82.js.map",
+    "main.1a638497.js.map": "/DeveloperPortfolio/static/js/main.1a638497.js.map",
     "453.ac9b7e2a.chunk.js.map": "/DeveloperPortfolio/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.95491577.css",
-    "static/js/main.d3400f82.js"
+    "static/js/main.1a638497.js"
   ]
 }

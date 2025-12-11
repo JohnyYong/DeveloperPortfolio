@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -21,38 +20,27 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import introGif from "./Assets/Intro.gif";   
 
 function App() {
-  const [load, upadateLoad] = useState(true);
-  const [showIntro, setShowIntro] = useState(true); 
+  const [showIntro, setShowIntro] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
-
+  // intro GIF timer
   useEffect(() => {
     const introTimer = setTimeout(() => {
       setShowIntro(false);
-    }, 3000); // 3 seconds change
-
+    }, 3000); // show for 3s
     return () => clearTimeout(introTimer);
   }, []);
 
   return (
     <Router>
-      {/* existing preloader */}
-      <Preloader load={load} />
 
-      {/* NEW: intro overlay on top of everything */}
+      {/* INTRO SCREEN */}
       {showIntro && (
         <div className="intro-screen">
           <img src={introGif} alt="Intro" className="intro-gif" />
         </div>
       )}
 
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      <div className="App">
         <Navbar />
         <ScrollToTop />
         <Routes>
