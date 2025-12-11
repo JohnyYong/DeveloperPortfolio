@@ -26,7 +26,7 @@ function App() {
   useEffect(() => {
     const introTimer = setTimeout(() => {
       setShowIntro(false);
-    }, 3000); // show for 3s
+    }, 1200); // show for 3s
     return () => clearTimeout(introTimer);
   }, []);
 
