@@ -24,7 +24,7 @@ function About() {
               }}
             >
               <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-                Let me introduce <strong className="purple">MYSELF</strong>
+                Let me introduce <strong className="cyan">MYSELF</strong>
               </h1>
               <Aboutcard />
             </Col>
@@ -37,13 +37,13 @@ function About() {
             </Col>
           </Row>
           <h1 className="project-heading">
-            <strong className="purple">Skillsets </strong>
+            <strong className="cyan">Skillsets </strong>
           </h1>
 
           <Techstack />
 
           <h1 className="project-heading">
-            <strong className="purple">Tools</strong> I use
+            <strong className="cyan">Tools</strong> I use
           </h1>
           <Toolstack />
         </Container>

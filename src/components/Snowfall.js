@@ -1,7 +1,8 @@
+
 import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "@tsparticles/slim";
-import snowflakeImg from "../Assets/snow.png"; 
+import snowflakeImg from "../Assets/snow.png"; // make sure src/Assets/snow.png exists
 
 function Snowfall() {
   const particlesInit = useCallback(async (engine) => {
@@ -18,15 +19,19 @@ function Snowfall() {
         fpsLimit: 60,
         particles: {
           number: {
-            value: 40,
+            value: 35, // fewer flakes than before
             density: { enable: true, area: 800 },
           },
           shape: {
             type: "image",
-            image: {
-              src: snowflakeImg, 
-              width: 64,
-              height: 64,
+            options: {
+              image: [
+                {
+                  src: snowflakeImg, // custom snowflake image
+                  width: 64,
+                  height: 64,
+                },
+              ],
             },
           },
           opacity: {
@@ -34,16 +39,18 @@ function Snowfall() {
             random: true,
           },
           size: {
-            value: 14, // base size
-            random: { enable: true, minimumValue: 6 }, // some variation
+            value: 14,
+            random: {
+              enable: true,
+              minimumValue: 6,
+            },
           },
           rotate: {
-            // spinning flakes
             value: { min: 0, max: 360 },
             direction: "random",
             animation: {
               enable: true,
-              speed: 10, // higher = faster spin
+              speed: 10, // spin speed
               sync: false,
             },
           },
