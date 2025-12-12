@@ -11,15 +11,20 @@ function ProjectCards(props) {
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
+
         <Card.Text style={{ textAlign: "justify", whiteSpace: "pre-line" }}>
           {props.description}
         </Card.Text>
 
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
+        {/* GitHub Button */}
+        {props.ghLink && (
+          <Button variant="primary" href={props.ghLink} target="_blank">
+            <BsGithub /> &nbsp;
+            {props.isBlog ? "Blog" : "GitHub"}
+          </Button>
+        )}
 
+        {/* Demo Button */}
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
@@ -28,10 +33,11 @@ function ProjectCards(props) {
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
-            {"Demo"}
+            Demo
           </Button>
         )}
 
+        {/* Figma Button */}
         {props.figmaLink && (
           <Button
             variant="primary"
@@ -40,7 +46,7 @@ function ProjectCards(props) {
             style={{ marginLeft: "10px" }}
           >
             <SiFigma /> &nbsp;
-            {"Figma"}
+            Figma
           </Button>
         )}
       </Card.Body>
