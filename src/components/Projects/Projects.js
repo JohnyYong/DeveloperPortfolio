@@ -7,6 +7,7 @@ import Knossos from "../../Assets/Projects/DungeonOfKnossos.png";
 import ReflectionAfterTheEnd from "../../Assets/Projects/ReflectionAfterTheEnd.png"
 import BattleMania from "../../Assets/Projects/BattleMania.gif"
 import AzureVania from "../../Assets/Projects/AzureVania.gif"
+import PairAndShare from "../../Assets/Projects/PairShare.png"
 
 function Projects() {
   return (
@@ -79,6 +80,35 @@ function Projects() {
               ghLink="https://github.com/JohnyYong/BattleMania"
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={BattleMania}
+              isBlog={false}
+              title="BattleMania"
+              description={
+                "An independent work project done in 2020 which I attempted to study how 2D fighting games are made. Melee combat hitboxes were explored, as well as further experimenting on the Multiplayer Networking aspect of games, this time attempted using Photon Networking package. Art assets are not done and not owned by myself."
+              }
+              demoLink="https://youtu.be/8S3q4YANx48"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={PairAndShare}
+              isBlog={false}
+              title="Pair & Share"
+              description={
+                "Pair & Share is a physical, question-driven card game designed to help final-year undergraduates overcome networking anxiety in a safe and engaging setting. \n\n"
+                + "The game simulates real-life networking scenarios through paired question cards tailored for students and industry professionals, encouraging meaningful conversations rather than awkward small talk. \n\n"
+                + "Developed through user interviews, persona creation, journey mapping, and iterative prototyping, the final design focuses on simplicity, inclusivity, and confidence-building. It is intended for use at networking events, career fairs, and industry meetups to help players practice communication skills and form genuine professional connections."
+              }
+
+              figmaLink="https://www.figma.com/design/xhsGfj4xojf8BDrHD88ALz/UDE-Figma-board-game?node-id=6-27&node-type=canvas&t=GDC6kq1vbRVjVARo-0"
+              demoLink="https://youtu.be/8S3q4YANx48"
+            />
+          </Col>
+
         </Row>
       </Container>
     </Container>
