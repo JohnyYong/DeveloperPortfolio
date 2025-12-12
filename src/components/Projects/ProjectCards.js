@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import { SiFigma } from "react-icons/si";
+import { SiGoogledrive } from "react-icons/si";
 
 function ProjectCards(props) {
   return (
@@ -24,6 +25,18 @@ function ProjectCards(props) {
           </Button>
         )}
 
+        {/* Google Drive Button */}
+        {props.driveLink && (
+          <Button
+            variant="primary"
+            href={props.driveLink}
+            target="_blank"
+            style={{ marginLeft: "10px" }}
+          >
+            <SiGoogledrive /> &nbsp;
+            Drive
+          </Button>
+        )}  
         {/* Demo Button */}
         {!props.isBlog && props.demoLink && (
           <Button
