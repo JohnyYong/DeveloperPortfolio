@@ -1,11 +1,13 @@
 {
   "files": {
     "main.css": "/DeveloperPortfolio/static/css/main.27f3e882.css",
-    "main.js": "/DeveloperPortfolio/static/js/main.75ac5dc7.js",
+    "main.js": "/DeveloperPortfolio/static/js/main.1939015b.js",
     "static/js/453.ac9b7e2a.chunk.js": "/DeveloperPortfolio/static/js/453.ac9b7e2a.chunk.js",
     "static/media/SeamlessCarve.gif": "/DeveloperPortfolio/static/media/SeamlessCarve.69559206b73e2e13e888.gif",
+    "static/media/BattleMania.gif": "/DeveloperPortfolio/static/media/BattleMania.7ac7d264f73e39964c9f.gif",
     "static/media/RabinAI.gif": "/DeveloperPortfolio/static/media/RabinAI.b5790d98f21303398c4c.gif",
     "static/media/ReflectionAfterTheEnd.png": "/DeveloperPortfolio/static/media/ReflectionAfterTheEnd.d32983bc00225445fdea.png",
+    "static/media/AzureVania.gif": "/DeveloperPortfolio/static/media/AzureVania.719555aad0d92c6e6743.gif",
     "static/media/DungeonOfKnossos.png": "/DeveloperPortfolio/static/media/DungeonOfKnossos.03f4bc32118614fd6340.png",
     "static/media/logo.png": "/DeveloperPortfolio/static/media/logo.4a2bc201d7c669268310.png",
     "static/media/about.png": "/DeveloperPortfolio/static/media/about.e7ac38f7e0f1b1594757.png",
@@ -37,11 +39,11 @@
     "static/media/Unity.svg": "/DeveloperPortfolio/static/media/Unity.d8cbb1f09c1123535a0e5e319ee719fe.svg",
     "static/media/Firebase.svg": "/DeveloperPortfolio/static/media/Firebase.c5e643a18f060de1d39eda5908abbb5f.svg",
     "main.27f3e882.css.map": "/DeveloperPortfolio/static/css/main.27f3e882.css.map",
-    "main.75ac5dc7.js.map": "/DeveloperPortfolio/static/js/main.75ac5dc7.js.map",
+    "main.1939015b.js.map": "/DeveloperPortfolio/static/js/main.1939015b.js.map",
     "453.ac9b7e2a.chunk.js.map": "/DeveloperPortfolio/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27f3e882.css",
-    "static/js/main.75ac5dc7.js"
+    "static/js/main.1939015b.js"
   ]
 }

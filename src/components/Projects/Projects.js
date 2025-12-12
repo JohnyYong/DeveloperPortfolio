@@ -5,7 +5,8 @@ import Snowfall from "../Snowfall"
 import grabity from "../../Assets/Projects/GrabityTitle.gif";
 import Knossos from "../../Assets/Projects/DungeonOfKnossos.png";
 import ReflectionAfterTheEnd from "../../Assets/Projects/ReflectionAfterTheEnd.png"
-
+import BattleMania from "../../Assets/Projects/BattleMania.gif"
+import AzureVania from "../../Assets/Projects/AzureVania.gif"
 
 function Projects() {
   return (
@@ -31,7 +32,6 @@ function Projects() {
               ghLink="https://github.com/JohnyYong/Grabity"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Knossos}
@@ -56,7 +56,29 @@ function Projects() {
               demoLink="https://drive.google.com/file/d/1e6QFiiWt70sOMYA3uGe2WXDk386Qgy9Z/view?usp=drive_link"
             />
           </Col>
-          
+            <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={AzureVania}
+              isBlog={false}
+              title="AzureVania"
+              description={
+                "A 2D mini Metroidvania Unity game project conducted a group of 4 including myself in 2020. Experimented in the usage of multiplayer networking through the Forge Networking package. My role in the project include handling Multiplayer Networking, Level Design and Enemy AIs."
+              }
+              ghLink="https://github.com/JohnyYong/AzureVania"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={BattleMania}
+              isBlog={false}
+              title="BattleMania"
+              description={
+                "An independent work project done in 2020 which I attempted to study how 2D fighting games are made. Melee combat hitboxes were explored, as well as further experimenting on the Multiplayer Networking aspect of games, this time attempted using Photon Networking package. Art assets are not done and not owned by myself."
+              }
+              ghLink="https://github.com/JohnyYong/BattleMania"
+            />
+          </Col>
         </Row>
       </Container>
     </Container>
