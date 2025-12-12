@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DeveloperPortfolio/static/css/main.6a229481.css",
-    "main.js": "/DeveloperPortfolio/static/js/main.544ec281.js",
+    "main.css": "/DeveloperPortfolio/static/css/main.27f3e882.css",
+    "main.js": "/DeveloperPortfolio/static/js/main.ba7ad785.js",
     "static/js/453.ac9b7e2a.chunk.js": "/DeveloperPortfolio/static/js/453.ac9b7e2a.chunk.js",
     "static/media/SeamlessCarve.gif": "/DeveloperPortfolio/static/media/SeamlessCarve.69559206b73e2e13e888.gif",
     "static/media/BattleMania.gif": "/DeveloperPortfolio/static/media/BattleMania.7ac7d264f73e39964c9f.gif",
@@ -39,12 +39,12 @@
     "static/media/Git.svg": "/DeveloperPortfolio/static/media/Git.9da88573cca3c97a3a1523ae09d93654.svg",
     "static/media/Unity.svg": "/DeveloperPortfolio/static/media/Unity.d8cbb1f09c1123535a0e5e319ee719fe.svg",
     "static/media/Firebase.svg": "/DeveloperPortfolio/static/media/Firebase.c5e643a18f060de1d39eda5908abbb5f.svg",
-    "main.6a229481.css.map": "/DeveloperPortfolio/static/css/main.6a229481.css.map",
-    "main.544ec281.js.map": "/DeveloperPortfolio/static/js/main.544ec281.js.map",
+    "main.27f3e882.css.map": "/DeveloperPortfolio/static/css/main.27f3e882.css.map",
+    "main.ba7ad785.js.map": "/DeveloperPortfolio/static/js/main.ba7ad785.js.map",
     "453.ac9b7e2a.chunk.js.map": "/DeveloperPortfolio/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a229481.css",
-    "static/js/main.544ec281.js"
+    "static/css/main.27f3e882.css",
+    "static/js/main.ba7ad785.js"
   ]
 }
