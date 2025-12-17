@@ -10,7 +10,6 @@ import AzureVania from "../../Assets/Projects/AzureVania.gif"
 import PairAndShare from "../../Assets/Projects/PairShare.png"
 import Obelisk from "../../Assets/Projects/Obelisk.png"
 
-
 // --- Game Programming / Engine Tech ---
 import C from "../../Assets/TechIcons/C++.svg";
 import CSharp from "../../Assets/TechIcons/CSharp.svg";
@@ -18,17 +17,25 @@ import FMod from "../../Assets/TechIcons/fmod.svg";
 import OpenGL from "../../Assets/TechIcons/OpenGL.svg";
 import Unity from "../../Assets/TechIcons/Unity.svg";
 import Unreal from "../../Assets/TechIcons/UE.svg";
+import Photon from "../../Assets/TechIcons/Photon.svg"
+import Forge from "../../Assets/TechIcons/ForgeNetworking.png"
 
 // --- Web / Scripting ---
 import Javascript from "../../Assets/TechIcons/Javascript.svg";
 import Node from "../../Assets/TechIcons/Node.svg";
 import ReactIcon from "../../Assets/TechIcons/React.svg";
 import JSONIcon from "../../Assets/TechIcons/JSON.svg";
+import Lua from "../../Assets/TechIcons/Lua.svg"
 
 // --- Tools / DevOps / Cloud ---
 import Git from "../../Assets/TechIcons/Git.svg";
 import SQL from "../../Assets/TechIcons/SQL.svg";
 import Firebase from "../../Assets/TechIcons/Firebase.svg";
+import vsCode from "../../Assets/TechIcons/vscode.svg";
+import PhotoShop from "../../Assets/TechIcons/PhotoShop.svg";
+import VS from "../../Assets/TechIcons/VS2022.svg";
+import Oculus from "../../Assets/TechIcons/Oculus.svg"
+import PlayStation from "../../Assets/TechIcons/PlayStation.svg"
 
 function Projects() {
   return (
@@ -48,11 +55,28 @@ function Projects() {
               isBlog={false}
               title="Grabity"
               description={
-                "Grabity is a physics-driven top-down survival game built on our team’s custom game engine. This project was my second experience working in a larger team of 9 members, where I served as the Product Manager.\n\n"
+                "Grabity is a physics-driven top-down survival game built on our team's custom game engine. This project was my second experience working in a larger team of 9 members, where I served as the Product Manager.\n\n"
                  + "I led the core gameplay development and implemented the Audio System, Tag/Layer Manager, as well as the Game Object Factory along with it's Entity Component System architecture. The user interface of the engine is done by ImGui"
               }
               ghLink="https://github.com/JohnyYong/Grabity"
-            />
+              skills={[
+              { src: C, label: "C++" },
+              { src: FMod, label: "FMod" },
+              { src: OpenGL, label: "OpenGL" },
+              { src: VS, label: "VS2022" },
+              { src: vsCode, label: "VSCode" },
+              { src: PhotoShop, label: "Photoshop" },
+              { src: Lua, label: "Lua" },
+              ]}
+              softSkills={[
+                  "Team Leadership",
+                  "Cross-discipline Communication",
+                  "Scope Management",
+                  "Rapid Iteration",
+                  "Problem Solving",
+                  "Task Prioritization",
+                ]}
+              softSkillLimit={5}            />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
@@ -64,6 +88,13 @@ function Projects() {
                  + "The art assets within the game are all done by yours truly"
               }
               ghLink="https://github.com/JohnyYong/DungeonOfKnossos"
+              skills={[
+              { src: CSharp, label: "C#" },
+              { src: Unity, label: "Unity" },
+              { src: PhotoShop, label: "Photoshop" },
+              { src: VS, label: "VS2022" },
+              { src: vsCode, label: "VSCode" },
+              ]}
             />
           </Col>
           <Col md={4} className="project-card">
@@ -76,6 +107,10 @@ function Projects() {
               }
               ghLink="https://github.com/JohnyYong/ReflectionAfterTheEnd"
               driveLink="https://drive.google.com/file/d/1e6QFiiWt70sOMYA3uGe2WXDk386Qgy9Z/view?usp=drive_link"
+              skills={[
+              { src: Unreal, label: "UnrealEngine" },
+              { src: C, label: "C++" },
+              ]}
             />
           </Col>
             <Col md={4} className="project-card">
@@ -87,6 +122,14 @@ function Projects() {
                 "A 2D mini Metroidvania Unity game project conducted a group of 4 including myself in 2020. Experimented in the usage of multiplayer networking through the Forge Networking package. My role in the project include handling Multiplayer Networking, Level Design and Enemy AIs."
               }
               ghLink="https://github.com/JohnyYong/AzureVania"
+              skills={[
+              { src: CSharp, label: "C#" },
+              { src: Unity, label: "Unity" },
+              { src: PhotoShop, label: "Photoshop" },
+              { src: Forge, label: "Forge Networking" },
+              { src: VS, label: "VS2022" },
+              { src: vsCode, label: "VSCode" },
+              ]}
             />
           </Col>
 
@@ -99,6 +142,14 @@ function Projects() {
                 "An independent work project done in 2020 which I attempted to study how 2D fighting games are made. Melee combat hitboxes were explored, as well as further experimenting on the Multiplayer Networking aspect of games, this time attempted using Photon Networking package. Art assets are not done and not owned by myself."
               }
               ghLink="https://github.com/JohnyYong/BattleMania"
+              skills={[
+              { src: CSharp, label: "C#" },
+              { src: Unity, label: "Unity" },
+              { src: PhotoShop, label: "Photoshop" },
+              { src: Photon, label: "Photon Networking" },
+              { src: VS, label: "VS2022" },
+              { src: vsCode, label: "VSCode" },
+              ]}
             />
           </Col>
 
@@ -127,9 +178,18 @@ function Projects() {
               + "I took on the role of Team Leader and Programming Lead, overseeing both technical direction and cross-discipline coordination with artists. My core contributions included Oculus VR implementation, grid-based interaction systems, VR input handling, and custom shader development.\n\n"
               + "This project was a key learning experience in adapting technical pipelines under real-world constraints, managing scope changes, and leading a mixed-discipline team to deliver a complete VR game within a tight production timeline."
               }
-              driveLink ="https://drive.google.com/file/d/1c2FtIyXhcBkc_ZZ5eoJm8gnBfKAZrS-i/view?usp=drive_link"
+              driveLink ="https://drive.google.com/drive/u/0/folders/14Y1LOmjX-xWqlVCej7PvYdkGI0lrqGw8"
               demoLink="https://www.youtube.com/playlist?list=PL9g68ppKwXMmE_Nh0aGJ9Th2hFns0YCvn"
             />
+              skills={[
+              { src: CSharp, label: "C#" },
+              { src: Unity, label: "Unity" },
+              { src: PhotoShop, label: "Photoshop" },
+              { src: Oculus, label: "Oculus VR" },
+              { src: PlayStation, label: "PlayStation4 Devkit" },
+              { src: VS, label: "VS2022" },
+              { src: vsCode, label: "VSCode" },
+              ]}
           </Col>
         </Row>
       </Container>

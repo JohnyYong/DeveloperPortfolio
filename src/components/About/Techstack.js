@@ -8,17 +8,23 @@ import FMod from "../../Assets/TechIcons/fmod.svg";
 import OpenGL from "../../Assets/TechIcons/OpenGL.svg";
 import Unity from "../../Assets/TechIcons/Unity.svg";
 import Unreal from "../../Assets/TechIcons/UE.svg";
+import Photon from "../../Assets/TechIcons/Photon.svg"
+import Forge from "../../Assets/TechIcons/ForgeNetworking.png"
 
 // --- Web / Scripting ---
 import Javascript from "../../Assets/TechIcons/Javascript.svg";
 import Node from "../../Assets/TechIcons/Node.svg";
 import ReactIcon from "../../Assets/TechIcons/React.svg";
 import JSONIcon from "../../Assets/TechIcons/JSON.svg";
+import Lua from "../../Assets/TechIcons/Lua.svg"
 
 // --- Tools / DevOps / Cloud ---
 import Git from "../../Assets/TechIcons/Git.svg";
 import SQL from "../../Assets/TechIcons/SQL.svg";
 import Firebase from "../../Assets/TechIcons/Firebase.svg";
+import Oculus from "../../Assets/TechIcons/Oculus.svg"
+import PlayStation from "../../Assets/TechIcons/PlayStation.svg"
+import AndroidStudio from "../../Assets/TechIcons/AndroidStudio.svg"
 
 function Techstack() {
 
@@ -56,6 +62,14 @@ function Techstack() {
     { src: Firebase, label: "Firebase" },
     { src: Git, label: "Git" },
     { src: SQL, label: "SQL" },
+    { src: Oculus, label: "Oculus VR" },
+    { src: PlayStation, label: "PlayStation DevKit" },
+    { src: AndroidStudio, label: "Android Studio" },
+    { src: Photon, label: "Photon Networking" },
+    { src: Forge, label: "Forge Networking" },
+    { src: Lua, label: "Lua" },
+
+
   ];
 
   return (
