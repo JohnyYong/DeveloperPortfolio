@@ -76,7 +76,8 @@ function Projects() {
                   "Problem Solving",
                   "Task Prioritization",
                 ]}
-              softSkillLimit={5}            />
+              softSkillLimit={5}
+              />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
@@ -95,6 +96,15 @@ function Projects() {
               { src: VS, label: "VS2022" },
               { src: vsCode, label: "VSCode" },
               ]}
+              softSkills={[
+                "Self-Directed Learning",
+                "Algorithmic Thinking",
+                "Systems Design",
+                "Game Design Thinking",
+                "Difficulty Balancing",
+                "Iterative Prototyping"
+              ]}
+              softSkillLimit={5}
             />
           </Col>
           <Col md={4} className="project-card">
@@ -111,6 +121,14 @@ function Projects() {
               { src: Unreal, label: "UnrealEngine" },
               { src: C, label: "C++" },
               ]}
+              softSkills={[
+              "Narrative Design Thinking",
+              "Player Experience Design",
+              "Environmental Storytelling",
+              "Iterative Prototyping",
+              "Self-Directed Learning"
+            ]}
+            softSkillLimit={5}
             />
           </Col>
             <Col md={4} className="project-card">
@@ -130,6 +148,15 @@ function Projects() {
               { src: VS, label: "VS2022" },
               { src: vsCode, label: "VSCode" },
               ]}
+               softSkills={[
+                "Multiplayer Systems Thinking",
+                "Team Collaboration",
+                "Technical Communication",
+                "Problem Solving",
+                "Iterative Development",
+                "Responsibility Ownership"
+              ]}
+              softSkillLimit={5}
             />
           </Col>
 
@@ -150,6 +177,15 @@ function Projects() {
               { src: VS, label: "VS2022" },
               { src: vsCode, label: "VSCode" },
               ]}
+              softSkills={[
+              "Self-Directed Learning",
+              "Combat Design Thinking",
+              "Systems Thinking",
+              "Algorithmic Thinking",
+              "Debugging",
+              "Iterative Prototyping"
+            ]}
+            softSkillLimit={5}
             />
           </Col>
 
@@ -165,6 +201,14 @@ function Projects() {
               }
               figmaLink="https://www.figma.com/design/xhsGfj4xojf8BDrHD88ALz/UDE-Figma-board-game?node-id=6-27&node-type=canvas&t=GDC6kq1vbRVjVARo-0"
               demoLink="https://youtu.be/8S3q4YANx48"
+              softSkills={[
+              "User-Centered Design",
+              "Facilitation & Moderation",
+              "Cross-Disciplinary Communication",
+              "Iterative Design",
+              "Playtesting & Feedback Synthesis"
+            ]}
+            softSkillLimit={5}
             />
           </Col>
 
@@ -189,6 +233,14 @@ function Projects() {
               { src: VS, label: "VS2022" },
               { src: vsCode, label: "VSCode" },
               ]}
+              softSkills={[
+              "Technical Leadership",
+              "Cross-Disciplinary Collaboration",
+              "Scope & Risk Management",
+              "Adaptability",
+              "Production Planning",
+              "Decision-Making"
+            ]}
             />
           </Col>
         </Row>
