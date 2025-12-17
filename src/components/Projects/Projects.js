@@ -8,6 +8,27 @@ import ReflectionAfterTheEnd from "../../Assets/Projects/ReflectionAfterTheEnd.p
 import BattleMania from "../../Assets/Projects/BattleMania.gif"
 import AzureVania from "../../Assets/Projects/AzureVania.gif"
 import PairAndShare from "../../Assets/Projects/PairShare.png"
+import Obelisk from "../../Assets/Projects/Obelisk.png"
+
+
+// --- Game Programming / Engine Tech ---
+import C from "../../Assets/TechIcons/C++.svg";
+import CSharp from "../../Assets/TechIcons/CSharp.svg";
+import FMod from "../../Assets/TechIcons/fmod.svg";
+import OpenGL from "../../Assets/TechIcons/OpenGL.svg";
+import Unity from "../../Assets/TechIcons/Unity.svg";
+import Unreal from "../../Assets/TechIcons/UE.svg";
+
+// --- Web / Scripting ---
+import Javascript from "../../Assets/TechIcons/Javascript.svg";
+import Node from "../../Assets/TechIcons/Node.svg";
+import ReactIcon from "../../Assets/TechIcons/React.svg";
+import JSONIcon from "../../Assets/TechIcons/JSON.svg";
+
+// --- Tools / DevOps / Cloud ---
+import Git from "../../Assets/TechIcons/Git.svg";
+import SQL from "../../Assets/TechIcons/SQL.svg";
+import Firebase from "../../Assets/TechIcons/Firebase.svg";
 
 function Projects() {
   return (
@@ -54,7 +75,7 @@ function Projects() {
                 "Reflection After The End is a small 3D game project which I experimented using Unreal Engine. The player awakens in a mysterious court suspended between life and death, where they must prove their worthiness to ascend to Heaven or fall into Hell. Guided by a divine Judge, the player must uncover three key memories tied to their past—each housed in a location twisted by denial and guilt. Through puzzles and symbolic tasks, they confront the truths they once buried. In the end, they must return to the courthouse, where judgment is passed—either by their own words or by someone they wronged."
               }
               ghLink="https://github.com/JohnyYong/ReflectionAfterTheEnd"
-              demoLink="https://drive.google.com/file/d/1e6QFiiWt70sOMYA3uGe2WXDk386Qgy9Z/view?usp=drive_link"
+              driveLink="https://drive.google.com/file/d/1e6QFiiWt70sOMYA3uGe2WXDk386Qgy9Z/view?usp=drive_link"
             />
           </Col>
             <Col md={4} className="project-card">
@@ -96,6 +117,20 @@ function Projects() {
             />
           </Col>
 
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Obelisk}
+              isBlog={false}
+              title="Obelisk"
+              description={
+                "Obelisk is my Final Year Project and first large-scale interdisciplinary collaboration, developed over 3 months for virtual reality. The project was originally built for PlayStation 4 VR, but midway through development, the team pivoted to Oculus Quest due to COVID-19 restrictions.\n\n"
+              + "I took on the role of Team Leader and Programming Lead, overseeing both technical direction and cross-discipline coordination with artists. My core contributions included Oculus VR implementation, grid-based interaction systems, VR input handling, and custom shader development.\n\n"
+              + "This project was a key learning experience in adapting technical pipelines under real-world constraints, managing scope changes, and leading a mixed-discipline team to deliver a complete VR game within a tight production timeline."
+              }
+              driveLink ="https://drive.google.com/file/d/1c2FtIyXhcBkc_ZZ5eoJm8gnBfKAZrS-i/view?usp=drive_link"
+              demoLink="https://www.youtube.com/playlist?list=PL9g68ppKwXMmE_Nh0aGJ9Th2hFns0YCvn"
+            />
+          </Col>
         </Row>
       </Container>
     </Container>
