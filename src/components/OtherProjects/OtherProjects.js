@@ -6,6 +6,17 @@ import RabinAI from "../../Assets/Projects/RabinAI.gif";
 import GameAI from "../../Assets/Projects/HumanisticGameAI.png";
 import SeamlessCarve from "../../Assets/Projects/SeamlessCarve.gif"
 
+// --- Game Programming / Engine Tech ---
+import C from "../../Assets/TechIcons/C++.svg";
+import CSharp from "../../Assets/TechIcons/CSharp.svg";
+import Unity from "../../Assets/TechIcons/Unity.svg";
+
+// --- Tools / DevOps / Cloud ---
+import vsCode from "../../Assets/TechIcons/vscode.svg";
+import PhotoShop from "../../Assets/TechIcons/PhotoShop.svg";
+import VS from "../../Assets/TechIcons/VS2022.svg";
+
+
 function OtherProjects() {
   return (
     <Container fluid className="project-section">
@@ -30,6 +41,20 @@ function OtherProjects() {
                 "3) Terrain Analysis - Performed environment evaluation and cost-based navigation analysis to support smarter AI movement.\n\n"
               }
               ghLink="https://github.com/JohnyYong/Game-AI-Projects"
+              skills={[
+              { src: C, label: "C++" },
+              { src: VS, label: "VS2022" },
+              { src: vsCode, label: "VSCode" },
+              ]}
+              softSkills={[
+              "Algorithmic Optimization",
+              "Performance Analysis",
+              "Problem Decomposition",
+              "Technical Experimentation",
+              "Competitive Benchmarking",
+              "Iterative Refinement"
+            ]}
+            softSkillLimit={5}
             />
           </Col>
 
@@ -42,9 +67,23 @@ function OtherProjects() {
                             "Personally, I focused on the implementation of the [Sense] section of the project as well as the [Blackboard] of the AIs."
               }
               ghLink="https://github.com/JohnyYong/AIBehaviorAndInformationSharingResearch"
+              skills={[
+              { src: CSharp, label: "C#" },
+              { src: Unity, label: "Unity" },
+              { src: VS, label: "VS2022" },
+              { src: PhotoShop, label: "Photoshop" },
+              ]}
+              softSkills={[
+              "Research-Oriented Thinking",
+              "Systems Design",
+              "Information Modeling",
+              "Collaborative Problem Solving",
+              "Abstract Reasoning",
+              "Technical Communication"
+            ]}
+            softSkillLimit={5}
             />
           </Col>
-
             <Col md={4} className="project-card">
             <OtherProjectCards
               imgPath={SeamlessCarve}
@@ -54,6 +93,19 @@ function OtherProjects() {
                             "Personally, I worked on the seamless carving implementation, visualisation, CICD of the project, as well as optimisation of the technique through flattening the array used to 1 Dimensional array."
               }
               ghLink="https://github.com/JohnyYong/AlgoAnalysis_SeamlessCarving"
+              skills={[
+              { src: C, label: "C++" },
+              { src: VS, label: "VS2022" },
+              ]}
+              softSkills={[
+              "Algorithmic Thinking",
+              "Dynamic Programming Reasoning",
+              "Optimization Mindset",
+              "Technical Visualization",
+              "Systems-Level Thinking",
+              "Implementation Precision"
+            ]}
+            softSkillLimit={5}
             />
           </Col>
         </Row>
