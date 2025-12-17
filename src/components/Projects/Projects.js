@@ -180,7 +180,6 @@ function Projects() {
               }
               driveLink ="https://drive.google.com/drive/u/0/folders/14Y1LOmjX-xWqlVCej7PvYdkGI0lrqGw8"
               demoLink="https://www.youtube.com/playlist?list=PL9g68ppKwXMmE_Nh0aGJ9Th2hFns0YCvn"
-            />
               skills={[
               { src: CSharp, label: "C#" },
               { src: Unity, label: "Unity" },
@@ -190,6 +189,7 @@ function Projects() {
               { src: VS, label: "VS2022" },
               { src: vsCode, label: "VSCode" },
               ]}
+            />
           </Col>
         </Row>
       </Container>
