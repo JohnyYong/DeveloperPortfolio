@@ -4,6 +4,8 @@ import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import { SiFigma, SiGoogledrive } from "react-icons/si";
+// 1. Added a documentation icon
+import { HiOutlineDocumentText } from "react-icons/hi"; 
 import { Row, Col } from "react-bootstrap";
 
 function ProjectCards(props) {
@@ -156,6 +158,18 @@ function ProjectCards(props) {
           <Button variant="primary" href={props.ghLink} target="_blank">
             <BsGithub /> &nbsp;
             {props.isBlog ? "Blog" : "GitHub"}
+          </Button>
+        )}
+
+        {/* 2. Documentation Button */}
+        {props.docsLink && (
+          <Button
+            variant="primary"
+            href={props.docsLink}
+            target="_blank"
+            style={{ marginLeft: "10px" }}
+          >
+            <HiOutlineDocumentText /> &nbsp; Docs
           </Button>
         )}
 

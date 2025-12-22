@@ -59,6 +59,7 @@ function Projects() {
                  + "I led the core gameplay development and implemented the Audio System, Tag/Layer Manager, as well as the Game Object Factory along with it's Entity Component System architecture. The user interface of the engine is done by ImGui"
               }
               ghLink="https://github.com/JohnyYong/Grabity"
+              docsLink="https://johnyyong.github.io/GrabityDocumentation/"
               skills={[
               { src: C, label: "C++" },
               { src: FMod, label: "FMod" },
