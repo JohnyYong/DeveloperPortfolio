@@ -9,8 +9,8 @@ import OpenGL from "../../Assets/TechIcons/OpenGL.svg";
 import Unity from "../../Assets/TechIcons/Unity.svg";
 import Unreal from "../../Assets/TechIcons/UE.svg";
 import Photon from "../../Assets/TechIcons/Photon.svg"
+import Python from "../../Assets/TechIcons/Python.svg"
 import Forge from "../../Assets/TechIcons/ForgeNetworking.png"
-import Python from "../Assets/Python.svg"
 
 // --- Web / Scripting ---
 import Javascript from "../../Assets/TechIcons/Javascript.svg";
