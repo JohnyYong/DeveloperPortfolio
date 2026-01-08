@@ -10,6 +10,7 @@ import Unity from "../../Assets/TechIcons/Unity.svg";
 import Unreal from "../../Assets/TechIcons/UE.svg";
 import Photon from "../../Assets/TechIcons/Photon.svg"
 import Forge from "../../Assets/TechIcons/ForgeNetworking.png"
+import Python from "../Assets/Python.svg"
 
 // --- Web / Scripting ---
 import Javascript from "../../Assets/TechIcons/Javascript.svg";
@@ -51,6 +52,7 @@ function Techstack() {
   const techItems = [
     { src: C, label: "C++" },
     { src: CSharp, label: "C#" },
+    { src: Python, label: "Python" },
     { src: FMod, label: "FMOD" },
     { src: OpenGL, label: "OpenGL" },
     { src: Unity, label: "Unity" },

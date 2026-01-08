@@ -42,6 +42,8 @@ function Toolstack() {
         <div className="tech-icons-text">Autodesk Maya</div>
       </Col>
 
+      
+
     </Row>
   );
 }
