@@ -28,7 +28,8 @@ function AboutCard() {
             <span className="cyan">5+ years</span>, I’ve worked extensively with{" "}
             <span className="cyan">C, C++, and C#</span>, creating games in{" "}
             <span className="cyan">Unity, Unreal, and custom-built engines</span>—from
-            physics-based shooters to AI-driven behavior systems.  
+            physics-based shooters to AI-driven behavior systems. In order to broaden my programming language base, I have picked up
+            on Python programming at an intermediate level as well!  
             <br />
             I enjoy the challenge of designing{" "}
             <span className="cyan">
