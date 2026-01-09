@@ -26,10 +26,13 @@ function ProjectCards(props) {
     : 0;
 
   const styles = {
+    // PATCH: Added animation for the gold pulsing effect
     cardExtra: props.isFeatured ? {
-      border: "2px solid #ffeb3b", 
-      boxShadow: "0px 0px 15px rgba(255, 235, 59, 0.3)",
-      transform: "scale(1.02)"
+      border: "4px solid #FFD700", 
+      boxShadow: "0px 0px 20px 5px rgba(255, 215, 0, 0.4)",
+      transform: "scale(1.01)",
+      animation: "goldPulse 2s infinite ease-in-out", 
+      transition: "all 0.3s ease-in-out"
     } : {},
     divider: {
       borderTop: "1px solid rgba(10, 136, 115, 0.94)",
@@ -82,85 +85,104 @@ function ProjectCards(props) {
   };
 
   return (
-    <Card className="project-card-view" style={styles.cardExtra}>
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+    <>
+      <style>
+        {`
+          @keyframes goldPulse {
+            0% {
+              box-shadow: 0px 0px 15px 2px rgba(255, 215, 0, 0.4);
+              border-color: #FFD700;
+            }
+            50% {
+              box-shadow: 0px 0px 30px 8px rgba(255, 215, 0, 0.7);
+              border-color: #FFFACD; /* Lighter gold */
+            }
+            100% {
+              box-shadow: 0px 0px 15px 2px rgba(255, 215, 0, 0.4);
+              border-color: #FFD700;
+            }
+          }
+        `}
+      </style>
+      
+      <Card className="project-card-view" style={styles.cardExtra}>
+        <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+        <Card.Body>
+          <Card.Title>{props.title}</Card.Title>
+          <Card.Text style={{ textAlign: "justify", whiteSpace: "pre-line" }}>
+            {props.description}
+          </Card.Text>
+          
+          {showAnySkills && <div style={styles.divider} />}
+          
+          {hasHardSkills && (
+            <>
+              <div style={styles.sectionTitle}>Tech / Tools</div>
+              <Row style={{ justifyContent: "center", marginBottom: "12px" }}>
+                {props.skills.map((skill) => (
+                  <Col key={skill.label} xs={4} md={3} style={{ textAlign: "center" }}>
+                    <img src={skill.src} alt={skill.label} style={styles.skillIcon} />
+                    <div style={styles.skillLabel}>{skill.label}</div>
+                  </Col>
+                ))}
+              </Row>
+            </>
+          )}
 
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+          {hasSoftSkills && (
+            <>
+              {hasHardSkills && <div style={{ ...styles.divider, margin: "12px 0" }} />}
+              <div style={styles.sectionTitle}>Soft Skills</div>
+              <div style={styles.softSkillWrap}>
+                {softSkillsToShow.map((s) => (
+                  <span key={s} style={styles.softSkillPill}>{s}</span>
+                ))}
+                {!showAllSoftSkills && remainingSoftSkills > 0 && (
+                  <button type="button" style={styles.softSkillMoreBtn} onClick={() => setShowAllSoftSkills(true)}>
+                    +{remainingSoftSkills} more
+                  </button>
+                )}
+                {showAllSoftSkills && props.softSkills.length > softSkillLimit && (
+                  <button type="button" style={styles.softSkillMoreBtn} onClick={() => setShowAllSoftSkills(false)}>
+                    Show less
+                  </button>
+                )}
+              </div>
+            </>
+          )}
 
-        <Card.Text style={{ textAlign: "justify", whiteSpace: "pre-line" }}>
-          {props.description}
-        </Card.Text>
+          {props.ghLink && (
+            <Button variant="primary" href={props.ghLink} target="_blank">
+              <BsGithub /> &nbsp; {props.isBlog ? "Blog" : "GitHub"}
+            </Button>
+          )}
 
-        {showAnySkills && <div style={styles.divider} />}
+          {props.docsLink && (
+            <Button variant="primary" href={props.docsLink} target="_blank" style={{ marginLeft: "10px" }}>
+              <HiOutlineDocumentText /> &nbsp; Docs
+            </Button>
+          )}
 
-        {hasHardSkills && (
-          <>
-            <div style={styles.sectionTitle}>Tech / Tools</div>
-            <Row style={{ justifyContent: "center", marginBottom: "12px" }}>
-              {props.skills.map((skill) => (
-                <Col key={skill.label} xs={4} md={3} style={{ textAlign: "center" }}>
-                  <img src={skill.src} alt={skill.label} style={styles.skillIcon} />
-                  <div style={styles.skillLabel}>{skill.label}</div>
-                </Col>
-              ))}
-            </Row>
-          </>
-        )}
+          {props.driveLink && (
+            <Button variant="primary" href={props.driveLink} target="_blank" style={{ marginLeft: "10px" }}>
+              <SiGoogledrive /> &nbsp; Drive
+            </Button>
+          )}
 
-        {hasSoftSkills && (
-          <>
-            {hasHardSkills && <div style={{ ...styles.divider, margin: "12px 0" }} />}
-            <div style={styles.sectionTitle}>Soft Skills</div>
-            <div style={styles.softSkillWrap}>
-              {softSkillsToShow.map((s) => (
-                <span key={s} style={styles.softSkillPill}>{s}</span>
-              ))}
-              {!showAllSoftSkills && remainingSoftSkills > 0 && (
-                <button type="button" style={styles.softSkillMoreBtn} onClick={() => setShowAllSoftSkills(true)}>
-                  +{remainingSoftSkills} more
-                </button>
-              )}
-              {showAllSoftSkills && props.softSkills.length > softSkillLimit && (
-                <button type="button" style={styles.softSkillMoreBtn} onClick={() => setShowAllSoftSkills(false)}>
-                  Show less
-                </button>
-              )}
-            </div>
-          </>
-        )}
+          {!props.isBlog && props.demoLink && (
+            <Button variant="primary" href={props.demoLink} target="_blank" style={{ marginLeft: "10px" }}>
+              <CgWebsite /> &nbsp; Demo
+            </Button>
+          )}
 
-        {props.ghLink && (
-          <Button variant="primary" href={props.ghLink} target="_blank">
-            <BsGithub /> &nbsp; {props.isBlog ? "Blog" : "GitHub"}
-          </Button>
-        )}
-
-        {props.docsLink && (
-          <Button variant="primary" href={props.docsLink} target="_blank" style={{ marginLeft: "10px" }}>
-            <HiOutlineDocumentText /> &nbsp; Docs
-          </Button>
-        )}
-
-        {props.driveLink && (
-          <Button variant="primary" href={props.driveLink} target="_blank" style={{ marginLeft: "10px" }}>
-            <SiGoogledrive /> &nbsp; Drive
-          </Button>
-        )}
-
-        {!props.isBlog && props.demoLink && (
-          <Button variant="primary" href={props.demoLink} target="_blank" style={{ marginLeft: "10px" }}>
-            <CgWebsite /> &nbsp; Demo
-          </Button>
-        )}
-
-        {props.figmaLink && (
-          <Button variant="primary" href={props.figmaLink} target="_blank" style={{ marginLeft: "10px" }}>
-            <SiFigma /> &nbsp; Figma
-          </Button>
-        )}
-      </Card.Body>
-    </Card>
+          {props.figmaLink && (
+            <Button variant="primary" href={props.figmaLink} target="_blank" style={{ marginLeft: "10px" }}>
+              <SiFigma /> &nbsp; Figma
+            </Button>
+          )}
+        </Card.Body>
+      </Card>
+    </>
   );
 }
 

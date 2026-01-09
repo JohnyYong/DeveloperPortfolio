@@ -13,7 +13,8 @@ export default function ProjectCoverflow({ projects }) {
     <Swiper
       modules={[EffectCoverflow, Navigation, Keyboard]}
       effect="coverflow"
-      centeredSlides
+      centeredSlides={true}
+      initialSlide={1}      
       grabCursor
       slidesPerView="auto"
       spaceBetween={20}
@@ -32,7 +33,7 @@ export default function ProjectCoverflow({ projects }) {
         <SwiperSlide
           key={i}
           style={{
-            width: "320px", // controls card width in the carousel
+            width: "320px",
           }}
         >
           <ProjectCards {...p} />
