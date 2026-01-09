@@ -89,8 +89,8 @@ function Home() {
       isFeatured: true,
       title: "Obelisk",
       description:
-        "Obelisk is my Final Year Project and first large-scale interdisciplinary collaboration, developed over 3 months for virtual reality. The project was originally built for PlayStation 4 VR, but midway through development, the team pivoted to Oculus Quest due to COVID-19 restrictions.\n\n" +
-        "I took on the role of Team Leader and Programming Lead, overseeing both technical direction and cross-discipline coordination with artists. My core contributions included Oculus VR implementation, grid-based interaction systems, VR input handling, and custom shader development.\n\n",      
+        "Obelisk was my Final Year Project and first major interdisciplinary collaboration, developed over 3 months in VR. Initially built for PlayStation 4 VR, the team pivoted to Oculus Quest due to COVID-19. \n\n" +
+        "As Team Leader and Programming Lead, I guided technical direction and artist coordination, contributing Oculus VR integration, grid-based interaction, VR input handling, and custom shaders.\n\n",      
       driveLink: "https://drive.google.com/drive/u/0/folders/14Y1LOmjX-xWqlVCej7PvYdkGI0lrqGw8",
       demoLink: "https://www.youtube.com/playlist?list=PL9g68ppKwXMmE_Nh0aGJ9Th2hFns0YCvn",
       skills: [
