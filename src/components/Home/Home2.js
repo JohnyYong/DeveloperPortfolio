@@ -21,7 +21,7 @@ function Home2() {
               <br />
               I specialise in 
               <i>
-                <b className="cyan"> C++, C#, Unity, OpenGL, and Gameplay Systems </b>
+                <b className="cyan"> C++, C#, Python, Unity, OpenGL, and Gameplay Systems </b>
               </i>
               — with strong experience in engine architecture, ECS design,
               AI behaviour, and editor tools.

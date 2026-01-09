@@ -4,7 +4,6 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import OtherProjects from "./components/OtherProjects/OtherProjects";
-import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import {
   HashRouter as Router,
@@ -56,7 +55,6 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );
