@@ -33,10 +33,8 @@ function Home() {
       isBlog: false,
       isFeatured: true,
       title: "Grabity",
-      description:
-        "Grabity is a physics-driven top-down survival game built on our team's custom game engine. This project was my second experience working in a larger team of 9 members, where I served as the Product Manager.\n\n" +
-        "I led the core gameplay development and implemented the Audio System, Tag/Layer Manager, as well as the Game Object Factory along with it's Entity Component System architecture. The user interface of the engine is done by ImGui",
-      ghLink: "https://github.com/JohnyYong/Grabity",
+     description:
+  "Grabity is a physics-driven top-down survival game developed using our custom game engine. As Product Manager in a team of nine, I led core gameplay development and implemented systems including Audio, Tag/Layer Manager, and a Game Object Factory based on ECS architecture. The engine's interface was built using ImGui for efficient debugging and iteration.",      ghLink: "https://github.com/JohnyYong/Grabity",
       docsLink: "https://johnyyong.github.io/GrabityDocumentation/",
       skills: [
         { src: C, label: "C++" },
@@ -62,8 +60,8 @@ function Home() {
       isBlog: false,
       isFeatured: true,
       title: "AzureVania",
-      description:
-        "A 2D mini Metroidvania Unity game project conducted a group of 4 including myself in 2020. Experimented in the usage of multiplayer networking through the Forge Networking package. My role in the project include handling Multiplayer Networking, Level Design and Enemy AIs.",
+description:
+  "AzureVania is a 2D mini Metroidvania game built in Unity by a team of four. I contributed to multiplayer networking using Forge Networking, designed enemy AI behaviors, and crafted level layouts to support exploration and combat. This project allowed me to experiment with real-time synchronization and cooperative gameplay mechanics.",
       ghLink: "https://github.com/JohnyYong/AzureVania",
       skills: [
         { src: CSharp, label: "C#" },
@@ -88,9 +86,8 @@ function Home() {
       isBlog: false,
       isFeatured: true,
       title: "Obelisk",
-      description:
-        "Obelisk was my Final Year Project and first major interdisciplinary collaboration, developed over 3 months in VR. Initially built for PlayStation 4 VR, the team pivoted to Oculus Quest due to COVID-19. \n\n" +
-        "As Team Leader and Programming Lead, I guided technical direction and artist coordination, contributing Oculus VR integration, grid-based interaction, VR input handling, and custom shaders.\n\n",      
+description:
+  "Obelisk was my Final Year Project in NYP, a VR experience developed over three months in collaboration with artists and designers. Initially targeting PlayStation VR, we pivoted to Oculus Quest due to COVID-19 constraints. As Team Leader, I directed technical development and coordinated art integration, implementing VR input handling, grid-based interaction, and custom shaders.",
       driveLink: "https://drive.google.com/drive/u/0/folders/14Y1LOmjX-xWqlVCej7PvYdkGI0lrqGw8",
       demoLink: "https://www.youtube.com/playlist?list=PL9g68ppKwXMmE_Nh0aGJ9Th2hFns0YCvn",
       skills: [
