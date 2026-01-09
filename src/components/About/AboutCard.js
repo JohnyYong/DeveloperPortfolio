@@ -43,16 +43,16 @@ function AboutCard() {
           <ul>
             <li className="about-activity">
               <ImPointRight /> Playing Japanese Role-Playing Games (JRPGs) and
-              analyzing their design 🎮
+              analyzing their design 
             </li>
             <li className="about-activity">
-              <ImPointRight /> Exploring AI and automation to enhance creative workflows 🤖
+              <ImPointRight /> Exploring AI and automation to enhance creative workflows 
             </li>
             <li className="about-activity">
-              <ImPointRight /> Reading novels &amp; self-improvement books 📚
+              <ImPointRight /> Reading novels &amp; self-improvement books 
             </li>
             <li className="about-activity">
-              <ImPointRight /> Traveling and experiencing different cultures 🌏
+              <ImPointRight /> Traveling and experiencing different cultures 
             </li>
           </ul>
 
