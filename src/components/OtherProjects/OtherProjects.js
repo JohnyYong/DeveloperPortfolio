@@ -119,7 +119,7 @@ function OtherProjects() {
               "Designed and trained a turtle-based agent by defining observation spaces, action spaces, and reward shaping strategies.\n\n" +
               "Used the PyTorch-based ML-Agents training pipeline to evaluate policy convergence, inference behavior, and learning stability through iterative experimentation."
             }
-            ghLink="https://github.com/JohnyYong/Your-MLAgents-Repo" // update if needed
+            ghLink="https://github.com/JohnyYong/ML-Agents-Research-Turtle" 
             skills={[
               { src: Unity, label: "Unity" },
               { src: Python, label: "Python" },
