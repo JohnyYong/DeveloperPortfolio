@@ -5,11 +5,12 @@ import Snowfall from "../Snowfall"
 import RabinAI from "../../Assets/Projects/RabinAI.gif";
 import GameAI from "../../Assets/Projects/HumanisticGameAI.png";
 import SeamlessCarve from "../../Assets/Projects/SeamlessCarve.gif"
-
+import MLAgent from "../../Assets/Projects/ML-Agent.gif"
 // --- Game Programming / Engine Tech ---
 import C from "../../Assets/TechIcons/C++.svg";
 import CSharp from "../../Assets/TechIcons/CSharp.svg";
 import Unity from "../../Assets/TechIcons/Unity.svg";
+import Python from "../../Assets/TechIcons/Python.svg"
 
 // --- Tools / DevOps / Cloud ---
 import vsCode from "../../Assets/TechIcons/vscode.svg";
@@ -108,6 +109,35 @@ function OtherProjects() {
             softSkillLimit={5}
             />
           </Col>
+          <Col md={4} className="project-card">
+          <OtherProjectCards
+            imgPath={MLAgent}
+            isBlog={false}
+            title="Independent Reinforcement Learning Agent (Unity ML-Agents)"
+            description={
+              "An independent AI experimentation project using Unity ML-Agents to study reinforcement learning behavior in a simulated environment.\n\n" +
+              "Designed and trained a turtle-based agent by defining observation spaces, action spaces, and reward shaping strategies.\n\n" +
+              "Used the PyTorch-based ML-Agents training pipeline to evaluate policy convergence, inference behavior, and learning stability through iterative experimentation."
+            }
+            ghLink="https://github.com/JohnyYong/Your-MLAgents-Repo" // update if needed
+            skills={[
+              { src: Unity, label: "Unity" },
+              { src: Python, label: "Python" },
+              { src: CSharp, label: "C#" },
+              { src: VS, label: "VS2022" },
+
+            ]}
+            softSkills={[
+              "Independent Learning",
+              "AI Experimentation",
+              "Behavior Analysis",
+              "Reward Design",
+              "Iterative Problem Solving",
+              "Analytical Thinking"
+            ]}
+            softSkillLimit={5}
+          />
+        </Col>
         </Row>
       </Container>
     </Container>
