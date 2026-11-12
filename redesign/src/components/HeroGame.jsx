@@ -218,7 +218,7 @@ export default function HeroGame() {
       const S = 1.7; // slime size
       // shadow
       ctx.fillStyle = "rgba(0,0,0,0.4)";
-      ctx.beginPath(); ctx.ellipse(x, yBase + 15, 15 - hop, 4.5, 0, 0, Math.PI * 2); ctx.fill();
+      ctx.beginPath(); ctx.ellipse(x, yBase + 15, Math.max(1, 15 - hop), 4.5, 0, 0, Math.PI * 2); ctx.fill();
       // glow
       const glow = ctx.createRadialGradient(x, y, 4, x, y, 40 + breathe * 2);
       glow.addColorStop(0, "rgba(62, 224, 207, 0.35)");
@@ -320,7 +320,7 @@ export default function HeroGame() {
 
       // coins
       for (const c of coins) {
-        const appear = Math.min(1, (now - c.born) / 300);
+        const appear = Math.max(0, Math.min(1, (now - c.born) / 300));
         const bob = reduce ? 0 : Math.sin(now / 300 + c.phase) * 2.5;
         const spin = reduce ? 1 : Math.abs(Math.cos(now / 420 + c.phase));
         const cx = c.x * CELL + CELL / 2, cy = c.y * CELL + CELL / 2 + bob;
@@ -383,7 +383,12 @@ export default function HeroGame() {
         if (pickup(now) && !following) goal = null;
       }
 
-      draw(now);
+      try {
+        draw(now);
+      } catch (err) {
+        // never let a drawing glitch stop the game loop
+        console.warn("HeroGame draw error:", err);
+      }
       raf = requestAnimationFrame(tick);
     }
 

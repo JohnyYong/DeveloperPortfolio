@@ -255,6 +255,13 @@ em { font-style: normal; color: var(--yellow); }
 .quote { margin: 28px 0 0; padding: 20px 24px; border-left: 4px solid var(--pink); background: var(--panel); border-radius: 0 16px 16px 0; font-size: 18px; line-height: 1.5; color: var(--text); }
 .quote::after { content: "— Johny"; display: block; margin-top: 10px; font-family: var(--pixel); font-size: 14px; color: var(--pink); }
 .sheet { background: var(--panel); border: 2px solid var(--line-2); border-radius: var(--radius); padding: 22px 24px 24px; box-shadow: 8px 8px 0 rgba(62, 224, 207, 0.25); }
+.portrait { position: relative; width: 168px; margin: 4px auto 18px; }
+.portrait__img { width: 168px; height: 168px; border-radius: 50%; object-fit: cover; border: 4px solid var(--cyan); box-shadow: 0 0 0 6px var(--panel), 0 0 0 8px rgba(62, 224, 207, 0.35), 0 12px 30px -8px rgba(62, 224, 207, 0.5); transition: transform .3s cubic-bezier(.2, .9, .3, 1.4); }
+.portrait:hover .portrait__img { transform: rotate(-4deg) scale(1.04); }
+.portrait__tag { position: absolute; top: 2px; right: -6px; background: var(--yellow); color: #1b1530; font-size: 14px; font-weight: 700; padding: 3px 9px; border-radius: 9px; transform: rotate(10deg); box-shadow: 0 3px 0 #b38a00; }
+.portrait__hp { display: flex; align-items: center; gap: 8px; margin-top: 14px; font-size: 13px; color: var(--pink); }
+.portrait__hp i { flex: 1; height: 10px; border-radius: 6px; background: #0b0916; border: 2px solid var(--line-2); overflow: hidden; }
+.portrait__hp b { display: block; height: 100%; width: 100%; background: linear-gradient(90deg, var(--pink), var(--yellow)); }
 .sheet__row { display: flex; justify-content: space-between; gap: 16px; padding: 9px 0; border-bottom: 2px dotted var(--line); font-size: 15.5px; }
 .sheet__row span:last-child { text-align: right; font-weight: 600; }
 .sheet__row .pixel { font-size: 14px; }

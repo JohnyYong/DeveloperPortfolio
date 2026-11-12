@@ -338,6 +338,13 @@ export function About() {
             </blockquote>
           </div>
           <div className="sheet reveal">
+            <div className="portrait">
+              <img src={profile.photo} alt="Johny Yong" className="portrait__img" loading="lazy" />
+              <span className="portrait__tag pixel">P1</span>
+              <div className="portrait__hp" aria-hidden="true">
+                <span className="pixel">HP</span><i><b /></i>
+              </div>
+            </div>
             <div className="sheet__row"><span className="pixel muted">NAME</span><span>{profile.fullName}</span></div>
             <div className="sheet__row"><span className="pixel muted">CLASS</span><span>Programmer / Designer</span></div>
             <div className="sheet__row"><span className="pixel muted">GUILD</span><span>DigiPen · SIT</span></div>

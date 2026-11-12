@@ -15,6 +15,7 @@ import mlImg from "./assets/media/ML-Agent-poster.webp";
 import mlVid from "./assets/media/ML-Agent.mp4";
 import pairImg from "./assets/media/PairShare.webp";
 import companionImg from "./assets/media/AICompanion.svg";
+import photoImg from "./assets/media/Johny.webp";
 
 export const profile = {
   name: "Johny Yong",
@@ -24,6 +25,7 @@ export const profile = {
   github: "https://github.com/JohnyYong",
   linkedin: "https://www.linkedin.com/in/johnyyong/",
   resume: "./JohnyYongResume.pdf",
+  photo: photoImg,
 };
 
 // Shown as a rotating "class" under the name
