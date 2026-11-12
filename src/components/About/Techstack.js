@@ -16,7 +16,7 @@ import Forge from "../../Assets/TechIcons/ForgeNetworking.png"
 import Javascript from "../../Assets/TechIcons/Javascript.svg";
 import Node from "../../Assets/TechIcons/Node.svg";
 import ReactIcon from "../../Assets/TechIcons/React.svg";
-import JSONIcon from "../../Assets/TechIcons/JSON.svg";
+import JSONIcon from "../../Assets/TechIcons/json.svg";
 import Lua from "../../Assets/TechIcons/Lua.svg"
 
 // --- Tools / DevOps / Cloud ---

@@ -21,16 +21,9 @@ import Photon from "../../Assets/TechIcons/Photon.svg"
 import Forge from "../../Assets/TechIcons/ForgeNetworking.png"
 
 // --- Web / Scripting ---
-import Javascript from "../../Assets/TechIcons/Javascript.svg";
-import Node from "../../Assets/TechIcons/Node.svg";
-import ReactIcon from "../../Assets/TechIcons/React.svg";
-import JSONIcon from "../../Assets/TechIcons/JSON.svg";
 import Lua from "../../Assets/TechIcons/Lua.svg"
 
 // --- Tools / DevOps / Cloud ---
-import Git from "../../Assets/TechIcons/Git.svg";
-import SQL from "../../Assets/TechIcons/SQL.svg";
-import Firebase from "../../Assets/TechIcons/Firebase.svg";
 import vsCode from "../../Assets/TechIcons/vscode.svg";
 import PhotoShop from "../../Assets/TechIcons/PhotoShop.svg";
 import VS from "../../Assets/TechIcons/VS2022.svg";
