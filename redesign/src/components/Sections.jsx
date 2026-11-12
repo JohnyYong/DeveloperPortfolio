@@ -320,7 +320,7 @@ export function About() {
         <div className="about">
           <div className="about__text reveal">
             <p className="about__big">
-              I'm Johny, a game developer from Singapore studying Interactive Media &amp; Game Development at
+              I'm Johny, a software/game developer from Singapore studying Interactive Media &amp; Game Development at
               DigiPen / SIT.
             </p>
             <p>
