@@ -1,12 +1,24 @@
 @echo off
-cd /d "%~dp0"
-title Portfolio dev server
-netstat -ano | findstr /r /c:":3000 .*LISTENING" >nul
-if errorlevel 1 (
-  echo Starting dev server on http://localhost:3000 ...
-  call npm start
-) else (
-  echo Dev server already running - opening http://localhost:3000
-  start "" http://localhost:3000
-  timeout /t 3 >nul
-)
+title Portfolio - dev server
+cd /d "%~dp0redesign"
+echo Node version:
+call node -v
+if errorlevel 1 goto nonode
+
+echo.
+echo Checking dependencies...
+call npm install
+if errorlevel 1 echo npm install reported a problem - trying to start anyway...
+
+echo.
+echo Starting the portfolio on http://localhost:5173 ...
+call npm run dev
+
+echo.
+echo The dev server stopped. If you see an error above, copy it and send it to Claude.
+pause
+exit /b
+
+:nonode
+echo Node.js was not found. Install it from https://nodejs.org and try again.
+pause
