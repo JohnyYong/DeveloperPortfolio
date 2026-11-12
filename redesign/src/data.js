@@ -319,8 +319,8 @@ export const loadout = [
 export const sideQuests = [
   { icon: "⚔", text: "Playing JRPGs, then pulling apart why their systems work" },
   { icon: "✈", text: "Travelling and soaking up new cultures" },
-  { icon: "📖", text: "Novels and self-improvement books" },
-  { icon: "🤖", text: "Using AI and automation to speed up creative work" },
+  { icon: "", text: "Novels and self-improvement books" },
+  { icon: "", text: "Using AI and automation to speed up creative work" },
 ];
 
 // Teaser for upcoming projects
