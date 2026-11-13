@@ -26,10 +26,11 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/johnyyong/",
   resume: "./JohnyYongResume.pdf",
   photo: photoImg,
+  itch: "https://saigousan.itch.io",
 };
 
 // Shown as a rotating "class" under the name
-export const roles = ["Game Programmer", "Game Designer", "Systems Tinkerer", "JRPG Enjoyer"];
+export const roles = ["Software Developer", "Game Programmer", "Game Designer", "Systems Tinkerer", "JRPG Enjoyer", "The One Who Step Up"];
 
 export const stats = [
   { value: "12", label: "games, tools & AI projects made" },
@@ -66,7 +67,7 @@ export const featured = [
     title: "Grabity",
     color: "yellow",
     tagline: "Physics-driven top-down survival",
-    meta: ["Custom C++ engine", "Team of 9", "Sep 2024 – Apr 2025"],
+    meta: ["Custom C++ engine", "Team of 9", "Sep 2024 - Apr 2025"],
     role: "Product Manager · Gameplay & Engine Programmer",
     image: grabityImg,
     idea:
@@ -113,7 +114,7 @@ export const featured = [
     color: "lime",
     tagline: "Procedural roguelike",
     meta: ["Unity", "Solo", "Code + design + art"],
-    role: "Everything — design, code and art",
+    role: "Everything - design, code and art",
     image: knossosImg,
     idea: "Every restart builds a brand-new labyrinth of up to 30 rooms. No two runs share a map.",
     design: [
@@ -242,7 +243,7 @@ export const projects = [
     image: humanImg,
     summary: "NPCs that sense, think and act more like people.",
     details: [
-      "Team of 3 — I built the Sense layer (what NPCs notice) and the shared AI Blackboard.",
+      "Team of 3 - I built the Sense layer (what NPCs notice) and the shared AI Blackboard.",
       "Explored how NPCs sharing information makes them more believable.",
     ],
     tech: ["Unity", "C#", "Game AI"],
@@ -281,7 +282,19 @@ export const projects = [
 
 export const questLog = [
   {
-    title: "Mentor — SIT Community Challenge",
+    title: "Intern - Robotics (Simulation) & Data Fusion",
+    org: "Home Team Science & Technology Agency (HTX)",
+    period: "May 2026 - Apr 2027",
+    text: "Building interactive simulations that help the Ministry of Home Affairs visualise and communicate new concepts and ideas. Leading my own capstone project, which has been showcased during high-profile visits including ministers, while also delivering a range of small and medium-sized projects. An 11-month placement under SIT's Integrated Work Study Programme (IWSP).",
+  },
+  {
+    title: "Facilitator - Introduction to Game Design for Secondary School Students",
+    org: "Singapore Institute of Technology",
+    period: "April 2026",
+    text: "In charge of teaching secondary school students about the Unity Game Engine, inclusive of crafting presentation slides as well as assisting in debugging faults in their development."
+  },
+  {
+    title: "Mentor - SIT Community Challenge",
     org: "Singapore Institute of Technology",
     period: "Oct 2025",
     text: "Spent 5 days coaching student teams building prototypes with AI posture and image recognition, covering code, UI/UX and debugging.",
@@ -289,26 +302,26 @@ export const questLog = [
   {
     title: "Software Engineer Intern",
     org: "YJP Surveyors",
-    period: "Jun – Aug 2020",
+    period: "Jun - Aug 2020",
     text: "Built a HoloLens mixed-reality app in Unity that shows pipes hidden behind walls and floors, with voice control and LiDAR point clouds. The prototype was commended for its effectiveness.",
   },
   {
     title: "B.Sc. (Hons) Interactive Media & Game Development",
     org: "DigiPen Institute of Technology / SIT",
-    period: "2023 – 2027",
+    period: "2023 - 2027",
     text: "Engines, game AI, graphics and team game projects.",
   },
   {
     title: "Diploma in Game Development & Technology",
     org: "Nanyang Polytechnic",
-    period: "2018 – 2021",
-    text: "Where it started. Led the VR Final Year Project, Obelisk.",
+    period: "2018 - 2021",
+    text: "Led the VR Final Year Project, Obelisk.",
   },
 ];
 
 export const loadout = [
   { group: "Code", color: "cyan", items: ["C++", "C", "C#", "Python", "Lua", "JavaScript", "Java", "Kotlin"] },
-  { group: "Engines & frameworks", color: "cyan", items: ["Custom C++ engines", "Unity", "Unreal Engine", "OpenGL", "ImGui", "Qt (C++)"] },
+  { group: "Engines & frameworks", color: "cyan", items: ["Custom C++ engines", "Unity", "Unreal Engine", "OpenGL", "ImGui", "Qt (C++)", "Whisper"] },
   { group: "Design", color: "pink", items: ["Level design", "Combat design", "Difficulty tuning", "Narrative design", "Playtesting", "UX research"] },
   { group: "Systems", color: "yellow", items: ["ECS", "Game AI", "Pathfinding", "Procedural generation", "Multiplayer (Photon, Forge)"] },
   { group: "XR", color: "lime", items: ["Meta Quest 3", "CAVE systems", "Oculus Quest", "PS4 VR", "HoloLens"] },
@@ -319,8 +332,8 @@ export const loadout = [
 export const sideQuests = [
   { icon: "⚔", text: "Playing JRPGs, then pulling apart why their systems work" },
   { icon: "✈", text: "Travelling and soaking up new cultures" },
-  { icon: "", text: "Novels and self-improvement books" },
-  { icon: "", text: "Using AI and automation to speed up creative work" },
+  { icon: "", text: "Light/Visual Novels and self-improvement books" },
+  { icon: "", text: "Developing Game AI and automation to speed up creative work" },
 ];
 
 // Teaser for upcoming projects
